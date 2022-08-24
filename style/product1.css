@@ -1,0 +1,26 @@
+#rate{
+    display: flex;
+}
+#rate>img{
+    width:120px;
+    height:45px;
+    margin-left:-10px;
+}
+#display{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#display>div>img{
+    width:240px;
+    height:260px
+}
+#display{
+    width:900px;
+}
+#costdiv{
+    display: flex;
+}
+#costdiv>h3{
+    margin-right: 20px;
+}
