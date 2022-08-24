@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>h1 {
+            margin-top: 50px;
+            text-align: center;
+            font-family: "Zurich Extended", sans-serif;
+        }
+        
+        #containall {
+            display: flex;
+            margin-top: 30px;
+        }
+        
+        #propage {
+            width: 67%;
+            height: auto;
+        }
+        
+        #checkk {
+            width: 23%;
+            max-height: 400px;
+            height: 100%;
+            background-color: #f5f5f5;
+            margin-left: 20px;
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        
+        @media screen and (min-device-width: 300px) and (max-device-width: 1000px) {
+            #containall {
+                display: block;
+                margin-top: 30px;
+            }
+            #propage {
+                width: 100%;
+            }
+            #checkk {
+                width: 80%;
+                margin-top: 50px;
+            }
+        }
+        
+        #tprice {
+            display: flex;
+            font-family: "Zurich Extended", sans-serif;
+            font-weight: 700;
+            color: #444444;
+            font-size: 20px;
+            line-height: 16px;
+        }
+        
+        #tprice>div+div {
+            display: flex;
+            margin: auto;
+            margin-right: 10px;
+        }
+        
+        #noteall {
+            font-family: Roboto, sans-serif;
+        }
+        
+        #cl {
+            color: #444444;
+            font-size: 15px;
+            margin-bottom: 15px;
+            margin-top: 0;
+        }
+        
+        #newnote>textarea {
+            border-radius: 20px;
+            height: 70px;
+            width: 85%;
+            border: 0.1px solid rgb(209, 209, 209);
+            overflow-y: auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #f5f5f5;
+        }
+        
+        #showd {
+            font-family: Roboto, sans-serif;
+            margin-top: 23px;
+        }
+        
+        #showd>p {
+            margin: 3px;
+            font-size: 13.4px;
+            color: #444444;
+        }
+        
+        a>button {
+            width: 100%;
+            margin-top: 30px;
+            height: 45px;
+            border: none;
+            border-radius: 20px;
+            background-color: blue;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 15px;
+        }
+        
+        #protd {
+            display: flex;
+        }
+        
+        #procontainer {
+            margin-top: 5px;
+        }
+        
+        #quacheck {
+            border: 1px solid gray;
+            padding: 5px 10px;
+            border-radius: 15px;
+            width: 75px;
+        }
+        
+        #quacheck>span:nth-child(1) {
+            width: 30px;
+            padding: 5px 10px;
+            margin-right: -5px;
+        }
+        
+        #quacheck>span:nth-child(2) {
+            width: 30px;
+            padding: 5px 10px;
+            margin-right: -5px;
+        }
+        
+        #quacheck>span:nth-child(3) {
+            width: 30px;
+            padding: 5px 10px;
+            margin-right: -5px;
+        }
+        
+        #prothead {
+            margin-left: 2px;
+        }
+        
+        #proid {
+            display: flex;
+            justify-items: start;
+            align-items: flex-start;
+            margin-left: 10px;
+        }
+        
+        #quid {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+        
+        #protd>div>p {
+            margin: 0;
+        }
+        
+        #protd>div>p:nth-child(2) {
+            margin: 5px 0 5px 0;
+            font-size: 14px;
+        }
+        
+        #protd>div>h3 {
+            margin: 0;
+        }
+        
+        #sym {
+            margin-left: 50px;
+        }
+        
+        #removekey {
+            margin-left: 19px;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CART</h1>
+    <div id="containall">
+        <table id="propage">
+            <thead id="prothead">
+                <tr>
+                    <th>
+                        <span id="proid">PRODUCT</span>
+                    </th>
+                    <th>
+                        <span id="quid">QUANTITY</span>
+                    </th>
+                    <th>
+                        <span id="toid">TOTAL</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="procontainer">
+            </tbody>
+        </table>
+        <div id="checkk">
+            <div id="tprice">
+                <div id="totalp">
+                    <p>TOTAL</p>
+                </div>
+                <div id="findpr">
+                    <p>&#8377</p>
+
+                </div>
+            </div>
+            <div id="noteall">
+                <p id="cl" onclick="myfun()"><u>Add order note</u></p>
+                <div id="newnote">
+                    <textarea type="text" name="showbox" id="textbox" rows="3" placeholder="How can we help you?"></textarea>
+                </div>
+            </div>
+            <div id="showd">
+                <p>This is the final price inclusive of taxes.</p>
+                <p>Shipping is always free.</p>
+                <p>No hidden surprises. 😃</p>
+            </div>
+            <a href=""><button>CHECKOUT</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let arr = JSON.parse(localStorage.getItem("productpage")) || [];
+    mysefun(arr)
+
+    function mysefun(arr) {
+        let bag = 0;
+        document.querySelector("tbody").innerHTML = "";
+        arr.forEach(function(el, i) {
+            let tr1 = document.createElement("tr");
+            let td1 = document.createElement("td");
+            let div1 = document.createElement("div");
+            div1.setAttribute("id", "protd");
+            let div2 = document.createElement("div");
+            let img = document.createElement("img");
+            img.setAttribute("src", el.imag);
+            let div3 = document.createElement("div");
+            let h31 = document.createElement("h3");
+            h31.innerText = el.brand;
+            let p1 = document.createElement("p");
+            p1.innerText = el.procolor + " / " + el.fun;
+            let p2 = document.createElement("p");
+            p2.innerText = el.price;
+            let td2 = document.createElement("td");
+            let div4 = document.createElement("div");
+            div4.setAttribute("id", "quacheck");
+            let jhola = 1;
+            let span1 = document.createElement("span");
+            span1.innerText = "-";
+            span1.setAttribute("click", function() {
+                let value = document.getElementById('quanti').innerText;
+                if (value > 1) {
+                    value--;
+                    document.getElementById('quanti').innerText = value;
+                }
+            });
+            let span2 = document.createElement("span");
+            span2.setAttribute("id", "quanti")
+            span2.innerText = jhola;
+            let span3 = document.createElement("span");
+            span3.innerText = "+";
+            span3.addEventListener("click", function() {
+                let value = document.getElementById('quanti').innerText;
+                if (value < 10) {
+                    value++;
+                    document.getElementById('quanti').innerText = value;
+
+                }
+            });
+
+            let div5 = document.createElement("div");
+            div5.setAttribute("id", "removekey");
+            let u1 = document.createElement("u");
+            u1.innerText = "REMOVE";
+            u1.addEventListener("click", function() {
+                removedata(i);
+            });
+            let td3 = document.createElement("td");
+            let span4 = document.createElement("span");
+            span4.setAttribute("id", "sym");
+            let span5 = document.createElement("span");
+            span5.setAttribute("id", "totalp");
+            span5.innerText = jhola * el.price;
+            bag = bag + Number(el.price);
+
+
+            tr1.append(td1, td2, td3);
+            td1.append(div1);
+            div1.append(div2, div3);
+            div2.append(img);
+            div3.append(h31, p1, p2);
+            div5.append(u1);
+            td2.append(div4, div5);
+            div4.append(span1, span2, span3);
+            td3.append(span4, span5);
+            document.getElementById("procontainer").append(tr1);
+        })
+        totalprice(bag)
+    }
+
+
+    function totalprice(bag) {
+        let p10 = document.createElement('p');
+        p10.innerText = bag;
+        document.getElementById("findpr").append(p10);
+    }
+
+    function removedata(i) {
+        arr.splice(i, 1);
+        mysefun(arr);
+        localStorage.setItem("productpage", JSON.stringify(arr)) || [];
+        window.location.reload()
+    };
+
+
+
+    function myfun() {
+        let textbox = document.getElementById("textbox");
+        if (textbox.style.display === "none") {
+            textbox.style.display = "block";
+        } else {
+            textbox.style.display = "none";
+        }
+    }
+</script>
