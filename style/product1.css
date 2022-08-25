@@ -45,7 +45,7 @@ hr{
 
 }
 #sidebar>h2{
-    color:#444444
+    color:'#444444';
 }
 .arrowup {
     transform: rotate(-135deg);
@@ -72,7 +72,7 @@ hr{
   #brandbut2,#productbut2,#pricebut2,#availbut2{
     background-color: transparent;
     border-width: 0px;
-    justify-content: space-around;
+    
   }
   
   

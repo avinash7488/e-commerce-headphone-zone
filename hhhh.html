@@ -1,4 +1,17 @@
-let filter1=async()=>{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="display"></div>
+</body>
+</html>
+<script>
+    let filter1=async()=>{
     const url=`https://nameless-wildwood-80835.herokuapp.com/api/posts`
     let res=await fetch(url)
     let data=await res.json()
@@ -52,4 +65,5 @@ let append=(data)=>{
         cont.append(div)
     })
 }
-export default filter1
+
+</script>
