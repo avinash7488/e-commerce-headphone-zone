@@ -5,7 +5,7 @@ let append=(data)=>{
     cont.innerHTML=null;
 console.log(data)
         let div=document.createElement("div")
-        div.setAttribute("class", "news")
+        div.setAttribute("id", "card")
         let img=document.createElement("img")
         img.src=data.mainimg
         let name=document.createElement("h4")

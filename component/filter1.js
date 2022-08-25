@@ -1,20 +1,12 @@
-// let main=async()=>{
-//     // let query=localStorage.getItem("query");
-//    let query="headphone"
-//     let data=await getData(query)
-//     append(data)
-
-// }
-let getData=async (query)=>{
+let filter1=async()=>{
     const url=`https://nameless-wildwood-80835.herokuapp.com/api/posts`
     let res=await fetch(url);
     let data=await res.json();
-    console.log(data)
-    // return data.articles
-    append(data)
-    
+    let filter=data.forEach((el)=>{
+     return el.name=="SONY"
+    })
+    append(filter)
 }
-
 let append=(data)=>{
     let cont=document.getElementById("display")
     cont.innerHTML=null;
@@ -58,11 +50,4 @@ let append=(data)=>{
         cont.append(div)
     })
 }
-let showelem=(el)=>{
-
-    localStorage.setItem("headphone",JSON.stringify(el))
-    window.location.href="addcart.html"
-    }
- 
-    
-export default getData
+export default filter1

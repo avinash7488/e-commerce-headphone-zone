@@ -24,3 +24,57 @@
 #costdiv>h3{
     margin-right: 20px;
 }
+#main{
+    display: flex;
+    justify-content: space-between;
+}
+#sidebar{
+    position:sticky;
+    top: 5px;
+    left:10px;
+    width:300px;
+    
+   
+}
+hr{
+    border-width: 0.1px;
+    
+}
+#sidebar>div{
+    margin-bottom:30px;
+
+}
+#sidebar>h2{
+    color:#444444
+}
+.arrowup {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .arrowdown {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  #brandbut1,#productbut1,#pricebut1,#availbut1{
+    background-color: transparent;
+    border-width: 0px;
+
+  }
+  #brandbut2,#productbut2,#pricebut2,#availbut2{
+    background-color: transparent;
+    border-width: 0px;
+    justify-content: space-around;
+  }
+  
+  
+    
+
