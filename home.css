@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: bisque;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #slideshow{
@@ -15,16 +14,23 @@ table>h2{
     margin: auto;
 }
 td{
-   border: 1px solid;
    font-size: 10px;
    text-align: center;
 }
 td>p{
     width: 100px;
     margin: auto;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 5px;
+}
+td>img{
+    width: 70px;
 }
 .heading{
     text-align: center;
+    margin-top: 80px;
 }
 #partA>p{
     margin: auto;
@@ -38,13 +44,13 @@ iframe{
     padding: 0;
     border: 0;
     margin-top: 50px;
-    
+    margin-bottom: 0px;
 }
 .box{
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
-    padding: 20px;
+    background-color: #E6E6E6;
+    margin-top: -5px;
 }
 .box>div{
     width: 400px;
@@ -57,5 +63,39 @@ iframe{
 .box>div>img{
     display: block;
     margin: auto;
+    margin-top: 25px;
 }
+.buttons{
+    display: flex;
+   justify-content: center;
+}
+.buttons>button{
+    margin: 20px 10px;
+    height: 45px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #E6E6E6;
+}
+.buttons>button:first-child{
+    background-color:#3c07FF;
+    font-weight: bold;
+    font-weight: bold;
+    color: white;
+}
+#product{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+    background-color: gray;
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+}
+#product>.card_pro>img{
+    width: 100%;
+    border: 1px solid ;
+}
+
 
