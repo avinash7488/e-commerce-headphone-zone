@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #paymentpage {
+            display: flex;
+            margin: 0;
+            overflow-y: scroll;
+
+        }
+        
+        #comm {
+            width: 50%;
+            padding: 8%;
+            padding-top: 20px;
+        }
+        
+        #proshowpage {
+            background-color: #f5f5f5;
+            border-left: 2px solid rgb(192, 192, 192);
+            width: 45%;
+            margin-top: 0;
+            padding: 4%;
+            padding-top: 20px;
+        }
+        #showprod{
+            margin-top: 50px;
+        }
+        #newlink>p>a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #gstdiv{
+            border: 1px solid red;
+            background-color: white;
+            height: 80px;
+        }
+        #gstdiv>input{
+    
+            border-radius: 30px;
+        }
+        #gstdiv>p{
+            font-size: 14px;
+        }
+#firstdiv{
+    border: 1px solid red;
+    background-color: #ffea9c;
+    border-radius: 15px;
+    padding: 3px;
+}
+#firstdiv>span:first-child{
+    font-size: 20px;
+    font-weight: 500;
+}
+#firstdiv>span{
+    margin: 20px;
+    
+}
+#gstdiv>span{
+font-size: 18px;
+padding-top: 20px;
+
+}
+#gstdiv{
+    text-align: center;
+};
+#addtype{
+    max-width: 1000px;
+width: 100%;
+padding: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="paymentpage">
+        <div id="comm">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Animated-Header_400x_b56ee274-b480-4d0f-91ae-4a16d148a93f.gif?v=1580537719" alt="">
+            </div>
+            <div id="newlink">
+                <p><a href="cart.html">Cart</a> &#62 Information &#62 Payment</p>
+            </div>
+            <div>
+                <h3>Contact information</h3>
+            </div>
+<div id="firstdiv">
+    <span>GST details:   </span><span>Is your organisation registered under GST ACT in India?</span>
+    
+    <div id="gstdiv">
+        <span>
+        <input type="checkbox">
+        <span>Yes, registered under GST ACT</span>
+    </span>
+    <span>
+        <input type="checkbox">
+        <span>No, not registered under GST ACT.</span>
+    </span>
+    
+    </div>
+    <p>Please enter your GST number now. Once order has been placed, no modifications can be made to add your GST number to the invoice.</p>
+
+</div>
+<div>
+    <h1>Shipping address</h1>
+    <div id="adddiv">
+        <select name="" id="addtype">
+            <option value="">name                                              ccc</option>
+            <option value="">new</option>
+        </select>
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <button>Continue to payment method</button>
+    </div>
+</div>
+        </div>
+        <div id="proshowpage">
+            <div id="showprod"><h1>product</h1></div>
+            <hr>
+            <div id="giftdiv">
+                <input type="text">
+                <button>APPLY</button>
+            </div>
+            <hr>
+            <div>
+                <div>
+                <span>Subtotal</span>
+                <span>30000</span>
+            </div>
+            <div>
+                <span>Shipping</span>
+                <span>Calculated at next step</span>
+            </div>
+            </div>
+            <div>
+                <span>TOTAL</span>
+                <span>INR 30000</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let arr = JSON.parse(localStorage.getItem("productpage")) || [];
+    printpro(arr)
+    function printpro(arr){
+    arr.forEach(function(ele){
+    let div1=document.createElement("div");
+    let img=document.createElement("img");
+    img.setAttribute("")
+    let div2=document.createElement("div");
+    let div3=document.createElement("div");
+})
+    }
+</script>
