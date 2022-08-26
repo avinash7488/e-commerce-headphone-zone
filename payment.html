@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           font-family:Roboto, sans-serif;
+        }
+        #paymentpage {
+            display: flex;
+            margin: 0;
+
+        }
+        
+        #newlink>p>a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #newlink>p{
+            font-size: 13px;
+            margin-top: 40px;
+        }
+        #comm>div>img{
+            width: 150px;
+        }
+        #comm {
+            width: 58%;
+            padding: 8%;
+            padding-top: 60px;
+        }
+        
+        #proshowpage {
+            background-color: #f5f5f5;
+            border-left: 2px solid rgb(192, 192, 192);
+            width: 45%;
+            margin-top: 0;
+            padding-top: 6px;
+            padding-right: 9%;
+            padding-left: 4%;
+           
+        }
+        #showprod{
+            height: 300px;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        #showprod:hover{
+            overflow-y: auto;
+        }
+        #showprod>div{
+            display: flex;
+            margin: 13px 0;
+        }
+        #showprod img{
+            width: 70px;
+            border: 1.5px solid rgb(230, 230, 230);
+            border-radius: 9px;
+        }
+        .brandname{
+            margin-left: 15px;
+        }
+        .brandname>p:first-child{
+            font-size: 15.5px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .brandname>p:last-child{
+            font-size: 13.5px;
+            margin-top: 2px;
+        }
+       .lastprice{
+        margin: auto;
+        margin-right: 0;
+       }
+       #giftdiv{
+        margin: 30px 0;
+       }
+       #giftdiv>input{
+        width: 75%;
+        height: 40px;
+        border-radius: 4px;
+        border: 0.1px solid rgb(196, 196, 196);
+        font-size: 17px;
+       }
+       #giftdiv>button{
+        width: 20%;
+        height: 42px;
+       }
+       #subtotal{
+        margin: 24px 0 13px 0;
+        font-size: 15px;
+       }
+       #shipp{
+        margin: 0 0 24px 0;
+        font-size: 15px;
+       }
+
+       #newli,#totalprice{
+        font-weight: 600;
+        display: flex;
+        justify-content: end;
+        margin-top: -17px;
+       }
+       #tprice>span:first-child{
+       font-size: 13px;
+       margin-right: 7px;
+       margin-top: 9px;
+    }
+       #tprice>span:last-child{
+       font-size: 25px;
+       font-weight: 600;
+       }
+       #tprice{
+        display: flex;
+        justify-content: end;
+        margin-top: -25px;
+       }
+       #ltotal{
+        margin: 20px 0;
+       }
+       #firstdiv{
+        width: 100%;
+        height: auto;
+        border: 0.1px solid rgb(185, 185, 185);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 30px;
+       }
+       #firstdiv>div{
+        display: flex;
+        font-size: 14px;
+        margin: 8px 0;
+       }
+       #firstdiv>div>p{
+        margin: 2px;
+       }
+       #paysy1{
+        width: 100%;
+        border: 1px solid rgb(182, 182, 182);
+       }
+    
+       #payimg img{
+        border: 0.1px solid rgb(212, 212, 212);
+        width: 31px;
+        height: 19px;
+        margin: 0;
+        
+       }
+       #payimg span{
+        font-size: 13px;
+        margin-top: -9px;
+       }
+       #payall{
+        border: 1px solid rgb(34, 34, 34);
+       }
+       #firs{
+        width: 100%;
+        height: auto;
+        border: 0.1px solid rgb(185, 185, 185);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 30px;
+       }
+       #firs>div{
+        display: flex;
+        font-size: 14px;
+        margin: 8px 0;
+       }
+       #firs>div>span{
+        margin: 2px;
+       }
+    </style>
+</head>
+
+<body>
+    <div id="paymentpage">
+        <div id="comm">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Animated-Header_400x_b56ee274-b480-4d0f-91ae-4a16d148a93f.gif?v=1580537719" alt="">
+            </div>
+            <div id="newlink">
+                <p><a href="cart.html">Cart</a> &#62 Information &#62 Payment</p>
+            </div>
+        <div id="firstdiv">
+            <div>
+                <p>Contact</p>
+                <p>Email</p>
+                <p>Change</p>
+            </div>
+            <hr>
+            <div>
+                <p>Ship to</p>
+                <p>Address</p>
+                <p>Change</p>
+            </div>
+        </div>
+        <div>
+            <h2>Payment</h2>
+            <p>All transactions are secure and encrypted.</p>
+            <div id="paysy1">
+                <div>
+                    <div class="payall">
+                        <input type="radio">
+                        <span id="paytype">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</span>
+                        <span id="payimg">
+                        <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg">
+                        <img src="https://cdn.vox-cdn.com/thumbor/FtAV-Waa1rTPheAkxv3o4i0MVf0=/0x0:1000x1000/1200x800/filters:focal(421x430:581x590)/cdn.vox-cdn.com/uploads/chorus_image/image/62800797/Mastercard_logo.0.jpg">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Rupay-Logo.png/1200px-Rupay-Logo.png">
+                        <img src="https://download.logo.wine/logo/Paytm/Paytm-Logo.wine.png">
+                        <span>and more…</span>
+                    </span>
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+                    <div class="payall">
+                        <input type="radio">
+                        <span id="paytype">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</span>
+                        <span id="payimg">
+                        <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg">
+                        <img src="https://cdn.vox-cdn.com/thumbor/FtAV-Waa1rTPheAkxv3o4i0MVf0=/0x0:1000x1000/1200x800/filters:focal(421x430:581x590)/cdn.vox-cdn.com/uploads/chorus_image/image/62800797/Mastercard_logo.0.jpg">
+                        <img src="https://1000logos.net/wp-content/uploads/2021/05/Discover-logo.png">
+                        <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/wp-cms/uploads/2018/04/4-you-might-not-notice-amex-new-brand.jpg">
+                        <span>and more…</span>
+                    </span>
+                    </div>
+                    <div></div>
+                </div>
+                <div>
+                    <div class="payall">
+                        <input type="radio">
+                        <span>Cashfree Payments</span>
+                        <span id="payimg">
+                        <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg">
+                        <img src="https://cdn.vox-cdn.com/thumbor/FtAV-Waa1rTPheAkxv3o4i0MVf0=/0x0:1000x1000/1200x800/filters:focal(421x430:581x590)/cdn.vox-cdn.com/uploads/chorus_image/image/62800797/Mastercard_logo.0.jpg">
+                        <span>and more…</span>
+                    </span>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>Billing address</h2>
+            <p>Select the address that matches your card or payment method.</p>
+            <div id="firs">
+                <div>
+                    <input type="radio">
+                    <span>Same as shipping address</span>
+                </div>
+                <hr>
+                <div>
+                    <input type="radio">
+                    <span>Use a different billing address</span>
+                </div>
+            </div>
+        </div>
+        <button>Complete order</button>
+        </div>
+
+            <div id="proshowpage">
+                <div id="showprod"></div>
+                <hr>
+                <div id="giftdiv">
+                <input type="text" placeholder="Gift card or discount code">
+                <button>APPLY</button>
+            </div>
+            <hr>
+            <div>
+                <div id="subtotal">
+                    <span>Subtotal</span>
+                    <span id="totalprice"></span>
+                </div>
+            <div id="shipp">
+                <span>Shipping</span>
+                <span id="newli">Free</span>
+            </div>
+            </div>
+            <hr>
+            <div id="ltotal">
+                <span>Total</span>
+                <span id="tprice">
+                    <span>INR</span>
+                    <span id="totalp"></span>
+                </span>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<script>
+    let arr = JSON.parse(localStorage.getItem("productpage")) || [];
+    printpro(arr)
+    function printpro(arr){
+        let bag=0;
+    arr.forEach(function(ele){
+    let div=document.createElement("div");
+    let div1=document.createElement("div");
+    let img=document.createElement("img");
+    img.setAttribute("src",ele.imag);
+    let div2=document.createElement("div");
+    div2.setAttribute("class","brandname")
+    let p1=document.createElement("p");
+    p1.innerText=ele.brand;
+    let p2=document.createElement("p");
+    p2.innerText=ele.procolor;
+    let div3=document.createElement("div");
+    div3.setAttribute("class","lastprice")
+    let p3=document.createElement("p");
+    p3.innerText="₹"+ele.price;
+    bag=bag+Number(ele.price);
+    div1.append(img);
+    div2.append(p1,p2);
+    div3.append(p3);
+    div.append(div1,div2,div3);
+    document.querySelector("#showprod").append(div)
+});
+totalpri(bag);
+    };
+
+
+    function totalpri(bag){
+      let finalpri= "₹"+bag.toFixed(2);
+    document.getElementById("totalprice").innerText=finalpri;
+    document.getElementById("totalp").innerText=finalpri;
+    }
+</script>
