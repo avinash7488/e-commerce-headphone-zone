@@ -1,4 +1,4 @@
-#nav_container{
+#nav_container{ 
     position: sticky;
     top: 0px;
 }
@@ -9,7 +9,7 @@
     justify-content: space-around;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     background-color: white;
-}
+} 
 #logo{
     width: 15%;
     display: flex;
@@ -27,14 +27,18 @@ size: 30px;
     font-weight: bold;
     color: rgb(11, 11, 167);
 }
-
 #middle_nav{
     width: 40%;
+}
+.middle_container{
+    width: 100%;
     display: flex;
     justify-content: space-around;
     font-size: larger;
     font-weight: bold;
     cursor: pointer;
+    list-style: none;
+    padding: 20px;
 }
 #right_nav{
     display: grid;
@@ -55,3 +59,9 @@ size: 30px;
     color: white;
     font-weight: lighter;
 }
+
+
+
+
+
+

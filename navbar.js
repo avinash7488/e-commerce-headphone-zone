@@ -19,7 +19,7 @@ export function navbar(){
         <p>Info</p>
         <p>Help Center</p>
       </div>
-
+ 
       <div id="right_nav">
         <p>Search</p>
         <p>Login</p>
