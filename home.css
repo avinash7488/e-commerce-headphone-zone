@@ -85,17 +85,104 @@ iframe{
     font-weight: bold;
     color: white;
 }
-#product{
-   display: grid;
-   grid-template-columns: repeat(5,1fr);
-    background-color: gray;
-    width: 100%;
-    height: 500px;
-    justify-content: space-between;
+
+#contt{
+    display: flex;
+    height: 350px;
+    background-color: antiquewhite;
+    margin-bottom: 30px;
 }
-#product>.card_pro>img{
-    width: 100%;
-    border: 1px solid ;
+.view{
+    display: block;
+    margin: auto;
+    background-color: #3c07FF;
+    font-weight: bold;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 45px;
+    margin-bottom: 60px;
 }
+.view+h5{
+ text-align: center;
+}
+.view+h5+h1{
+    margin-top: 20px;
+}
+.pic{
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 45px;
+}
+.pic>div{
+    width: 100%;
+    margin: 20px;
+    border-radius: 10px;
+}
+.pic>div>img{
+    width: 100%;
+    border-radius:10px;
+}
+.pic>div>h2{
+    width: 230px;
+    position: relative;
+    top:-200px;
+    color: white;
+   text-align: center;
+   font-weight: bold;
+   font-size: 27px;
+}
+.pic+div>img{
+    width: 100%;
+    height:600px;
+    margin-top:-170px;
+}
+.img_b{
+    background-color:white;
+    margin: auto;
+    border-radius: 15px;
+     width: 430px;
+    padding: 30px;
+    text-align: center;
+    top:80px;
+    position: relative;
+    top:-500px;
+}
+.brands{
+   margin-top: -400px;
+    text-align: center;
+    background-color: #E6E6E6;
+    padding-top: 40px;
+}
+.brand_p{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-content: space-evenly;
+    margin: auto;
+}
+.brands>button{
+    width: 120px;
+    height: 50px;
+    border: 0px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: rgb(34, 32, 32);
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+.brands>button:hover{
+   background-color: grey;
+   color: white;
+}
+
+
+
+
 
 
