@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link rel="stylesheet" href="style/addcart.css">
 <body>
-    <div id="display"></div>
-    
+    <img style="width:600px;height:600px" alt="">
 </body>
 </html>
-<script src="scripts/addcart.js"></script>
+<script>
+    let data=localStorage.getItem("images")
+    console.log(data)
+document.querySelector("img").src=data
+</script>

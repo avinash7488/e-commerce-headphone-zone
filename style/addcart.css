@@ -1,0 +1,106 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#444444;
+}
+#rate>img{
+    width:90px;
+    height:35px;
+    cursor:pointer
+   
+}
+#rate{
+    display: flex;
+}
+#rate>h3{
+    font-size: 12px;
+}
+#left>img{
+    width:550px;
+    height:500px;
+    margin-right: 200px;
+    cursor:pointer
+}
+#card{
+    display: flex;
+
+}
+#name{
+    color:rgb(68,68,68);
+    font-size:44px;
+    margin-top: -20px;
+}
+#desc{
+    color:#63444e;
+    font-size:14px;
+}
+.rating{
+    margin-top:10px
+}
+.cost{
+    color:#3c07ff;
+    font-size:33px;
+}
+#highcost{
+   text-decoration:line-through;
+   font-size:16px;
+   margin-top: 45px;
+}
+#costdiv{
+    display: flex;
+    font-size:28px;
+    justify-content: space-between;
+}
+#brandname{
+    margin-left: 2px;
+}
+#imgdiv{
+    display: flex;
+    justify-content: space-between;
+}
+#imgdiv>img{
+    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    cursor:pointer
+}
+#imgdiv>img:hover{
+    border: 2px solid black;
+    cursor:pointer
+}
+#left>div>img{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor:pointer
+}
+#left>div>img:hover{
+    border: 1px solid black;
+    cursor:pointer
+}
+#buttoncart{
+    
+    margin-top: 30px;
+    width:100%;
+    height:50px;
+    border-radius: 25px;
+    border-width: 0px;
+    background-color: #3c07ff;
+    color: white;
+    font-size:medium;
+    cursor:pointer
+}
+#buttoncart2{
+    
+    margin-top: 30px;
+    width:100%;
+    height:50px;
+    border-radius: 25px;
+    border-width: 0px;
+    background-color:#e6e6e6;
+    color: black;
+    font-size:medium;
+    cursor:pointer
+}
+/* #newdiv{
+    width:500px
+} */
