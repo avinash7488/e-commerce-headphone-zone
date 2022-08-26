@@ -1,9 +1,9 @@
 let data = JSON.parse(localStorage.getItem("userData")) || [];
 
 class User {
-  constructor(name,email, pass) {
+  constructor(name,email, pass,last_name) {
     this.name = name;
-
+this.last_name=last_name
     this.email = email;
     this.password = pass;
   }
@@ -32,11 +32,11 @@ let form = document.querySelector("form");
 let addUser = (event) => {
   event.preventDefault();
   let name = form.name.value;
-
+  let last_name = form.last_name.value;
   let email = form.email.value;
   let pass = form.password.value;
 
-  let user = new User(name,email, pass);
+  let user = new User(name,email, pass,last_name);
   let flag = user.checkData(email);
   if (flag) {
     alert("User already exist!");
