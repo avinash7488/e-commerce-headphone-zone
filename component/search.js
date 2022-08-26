@@ -110,7 +110,7 @@ let filter8=async()=>{
 }
 let filter9=async()=>{
     let filter=data.filter((el)=>{
-     return el.name==="SENHEISER"
+     return el.name==="SENNHEISER"
     })
     console.log(filter)
     append(filter)
