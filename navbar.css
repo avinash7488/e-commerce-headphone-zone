@@ -1,0 +1,97 @@
+/* @import url('https://fonts.googleapis.com/css?family=Ubuntu'); */ 
+
+ 
+
+.wrapper{
+	width: 100%;
+   
+    /* font-family: 'Ubuntu', sans-serif; */
+    list-style: none;
+    margin: 0;
+	padding: 0;
+}
+
+.mega_menu{
+	width: 100%;
+	height: 80px;
+   
+}
+
+.mega_menu ul{
+	width: 100%;
+	height: 100%;
+	background-color: rgb(229, 229, 229);
+	text-align: center;
+	line-height: 59px;
+	position: relative;
+    top: 0px;
+}
+
+.mega_menu ul li {
+	display: inline-block;
+	margin: 20px 15px;
+	padding: 0 15px;
+}
+
+.mega_menu ul li a{
+	color: black;
+	font-weight: bold;
+	/* font-size: 12px; */
+	display: block;
+}
+
+.wrapper img{
+	width: 25%;
+	height: 60px;
+}
+
+.mega_menu ul li .sub_menu{
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	padding: 25px 15px;
+	/* display: flex; */
+    margin: auto;
+	justify-content: space-around;
+	 visibility: hidden; 
+	line-height: 24px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+     box-sizing: border-box;
+} 
+
+
+ /* .mega_menu ul li:hover{
+	background-color: white;
+} */
+
+.mega_menu ul li:hover {
+	border-bottom: 1px solid black;
+    transition: all 0.4s ease
+}
+
+.mega_menu ul li:hover .sub_menu{
+	visibility: visible; 
+   
+} 
+
+ .mega_menu ul li .sub_menu img{
+	width: 50px;
+	height: 50px;
+} 
+ .mega_menu ul li .sub_menu p{
+	margin-top: 15px;
+	font-size: 12px;
+} 
+
+
+
+.sub_menu table{
+    width: 80%;
+}
+
+
+.sub_menu table td {
+   width: 40px;
+}
