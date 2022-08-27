@@ -1,6 +1,6 @@
 #footer_counter{
     /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
-    background-color: rgb(250, 249, 249);
+    background-color: rgb(249, 249, 249);
     margin-top: 150px;
 }
 
@@ -33,4 +33,30 @@
 #copyright{
     display: flex;
     justify-content: center;
+}
+
+#help p>a{
+    color: black;
+    text-decoration: none;
+    
+}
+#policies p>a{
+    color: black;
+    text-decoration: none;
+}
+#community p>a{
+    color: black;
+    text-decoration: none;
+}
+#beware p>a{
+    color: black;
+    
+}
+#media p>a{
+    color: black;
+    text-decoration: none;
+}
+#footer_bottom p>a{
+    color: black;
+    
 }
