@@ -1,0 +1,115 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#444444;
+}
+#rate{
+    display: flex;
+}
+#rate>img{
+    width:120px;
+    height:45px;
+    margin-left:-10px;
+}
+#display{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+#display>div>img{
+    width:240px;
+    height:260px;
+    cursor: pointer;
+}
+#display{
+    width:900px;
+}
+#costdiv{
+    display: flex;
+}
+#costdiv>h3{
+    margin-right: 20px;
+}
+#main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+#sidebar{
+    position:sticky;
+    top: 5px;
+    left:10px;
+    width:300px;
+    
+   
+}
+hr{
+    border-width: 0.1px;
+    
+}
+#sidebar>div{
+    margin-bottom:30px;
+
+}
+#sidebar>h2{
+    color:#444444;
+}
+.arrowup {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .arrowdown {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  #brandbut1,#productbut1,#pricebut1,#availbut1{
+    background-color: transparent;
+    border-width: 0px;
+
+  }
+  #brandbut2,#productbut2,#pricebut2,#availbut2{
+    background-color: transparent;
+    border-width: 0px;
+    
+  }
+  #abovefilter{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f4f4f4;
+    margin-top: -280px;
+    width:1255px;
+  }
+  #abovefilter>div>img{
+    width:140px;
+    height:130px
+  }
+  #abovefilter>div,button{
+    cursor: pointer;
+  }
+  #big>img{
+width:1255px;
+height:500px;
+  }
+  #big>h1{
+    text-align:justify;
+    position:relative;
+    top:-400px;
+    left:500px;
+    color:white;
+    font-size:52px;
+  }
+ 
+ 
+ 
+  
+  
+    
+

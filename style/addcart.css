@@ -1,0 +1,183 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color:#444444;
+}
+#rate>img{
+    width:90px;
+    height:35px;
+    cursor:pointer
+   
+}
+#rate{
+    display: flex;
+    margin-left: -10px;
+}
+#rate>h3{
+    font-size: 12px;
+  
+}
+#left>img{
+    width:550px;
+    height:500px;
+    margin-right: 200px;
+    cursor:pointer
+}
+#card{
+    display: flex;
+
+}
+#name{
+    color:rgb(68,68,68);
+    font-size:44px;
+    margin-top: -20px;
+}
+#desc{
+    color:#63444e;
+    font-size:14px;
+    margin-top: -50px;
+}
+.rating{
+    margin-top:10px
+}
+.cost{
+    color:#3c07ff;
+    font-size:33px;
+}
+#highcost{
+   text-decoration:line-through;
+   font-size:16px;
+   margin-top: 45px;
+}
+#costdiv{
+    display: flex;
+    font-size:28px;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+#brandname{
+    margin-left: 2px;
+}
+#imgdiv{
+    display: flex;
+    justify-content: space-between;
+}
+#imgdiv>img{
+    
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    cursor:pointer
+}
+#imgdiv>img:hover{
+    border: 2px solid black;
+    cursor:pointer
+}
+#left>div>img{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor:pointer
+}
+#left>div>img:hover{
+    border: 1px solid black;
+    cursor:pointer
+}
+#buttoncart{
+    
+    margin-top: 30px;
+    width:100%;
+    height:50px;
+    border-radius: 25px;
+    border-width: 0px;
+    background-color: #3c07ff;
+    color: white;
+    font-size:medium;
+    cursor:pointer
+}
+#buttoncart2{
+    
+    margin-top: 30px;
+    width:100%;
+    height:50px;
+    border-radius: 25px;
+    border-width: 0px;
+    background-color:#e6e6e6;
+    color: black;
+    font-size:medium;
+    cursor:pointer
+}
+/* #newdiv{
+    width:500px
+} */
+#table{
+    position: absolute;
+    top:650px;
+    left:600px;
+    
+}
+#firstrow button{
+    background-color:transparent;
+    border-width: 0px;
+  }
+#oo1{
+width:90px;
+height:90px;
+margin-top: -32px;
+}
+#oo2{
+    width:70px;
+    height:70px;
+    margin-top: -23px;
+    }
+    #oo3{
+        width:55px;
+        height:25px;
+     margin-top: -4px;
+        }
+        #oo4{
+            width:30px;
+            height:20px;
+          
+
+            }
+#firstrow{
+    display: flex;
+    justify-content: space-evenly;
+}
+#secondrow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -56px;
+    margin-top: 30px;
+}
+#thirdrow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -62px;
+    margin-top: 40px;
+    width:600px;
+    margin-left: -25px;
+}
+#fourthrow{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+hr{
+    border-width: 1px;
+    color: black;
+    background-color: black;
+}
+#low{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:20px;
+    position: relative;
+    top:600px;
+    left:40px
+}
+#low img{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    margin: auto;
+}
