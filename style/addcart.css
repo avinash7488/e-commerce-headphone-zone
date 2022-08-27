@@ -10,9 +10,11 @@
 }
 #rate{
     display: flex;
+    margin-left: -10px;
 }
 #rate>h3{
     font-size: 12px;
+  
 }
 #left>img{
     width:550px;
@@ -32,6 +34,7 @@
 #desc{
     color:#63444e;
     font-size:14px;
+    margin-top: -50px;
 }
 .rating{
     margin-top:10px
@@ -49,6 +52,7 @@
     display: flex;
     font-size:28px;
     justify-content: space-between;
+    margin-top: -20px;
 }
 #brandname{
     margin-left: 2px;
@@ -104,3 +108,76 @@
 /* #newdiv{
     width:500px
 } */
+#table{
+    position: absolute;
+    top:650px;
+    left:600px;
+    
+}
+#firstrow button{
+    background-color:transparent;
+    border-width: 0px;
+  }
+#oo1{
+width:90px;
+height:90px;
+margin-top: -32px;
+}
+#oo2{
+    width:70px;
+    height:70px;
+    margin-top: -23px;
+    }
+    #oo3{
+        width:55px;
+        height:25px;
+     margin-top: -4px;
+        }
+        #oo4{
+            width:30px;
+            height:20px;
+          
+
+            }
+#firstrow{
+    display: flex;
+    justify-content: space-evenly;
+}
+#secondrow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -56px;
+    margin-top: 30px;
+}
+#thirdrow{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -62px;
+    margin-top: 40px;
+    width:600px;
+    margin-left: -25px;
+}
+#fourthrow{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+hr{
+    border-width: 1px;
+    color: black;
+    background-color: black;
+}
+#low{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    gap:20px;
+    position: relative;
+    top:600px;
+    left:40px
+}
+#low img{
+    width:100px;
+    height:100px;
+    border-radius: 100px;
+    margin: auto;
+}

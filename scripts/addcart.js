@@ -94,15 +94,20 @@ newdiv.setAttribute("id","newdiv")
         let highcost=document.createElement("h3")
         highcost.innerText=`MRP: ₹${Math.ceil(x)}`
        highcost.setAttribute("id","highcost")
-    //    let xdiv=document.createElement("div")
-    //     let p=document.createElement("p")
-    //     p.innerText="Is our price too high?"
-    //     p.style.fontSize="11px"
-    //     p.style.marginTop="50px"
-    //     xdiv.append(p)
-        costdiv.append(cost,highcost)
+       let xdiv=document.createElement("div")
+        let p=document.createElement("p")
+        p.innerText="Is our price too high?"
+        p.style.fontSize="14px"
+        p.style.marginTop="50px"
+        p.style.color="#a0a0a0"
+        xdiv.append(p)
+        costdiv.append(cost,highcost,xdiv)
         
         costdiv.setAttribute("id","costdiv")
+        let p1=document.createElement("p")
+        p1.innerText="Or ₹ 2,333 (Simpl/Bajaj/Zest/Cards) "
+        p1.style.marginTop="-10px"
+        p1.style.marginBottom="50px"
       let imgdiv=document.createElement("div")
       imgdiv.setAttribute("id","imgdiv")
       let sideimg1=document.createElement("img")
@@ -136,12 +141,25 @@ newdiv.setAttribute("id","newdiv")
       button2.addEventListener("click",()=>{
       alert("Please Contact our 24/7 Helpline")
       })
-        newdiv.append(brandname,name,desc,ratediv,costdiv,imgdiv,button,button2)
+        newdiv.append(brandname,name,desc,ratediv,costdiv,p1,imgdiv,button,button2)
         div.append(left,newdiv)
         cont.append(div)
     
 }
 append(data)
 let adddata=(data)=>{
-    localStorage.setItem("datastore",JSON.stringify(data))
+  let arr=[]
+  arr.push(data)
+    localStorage.setItem("datastore",JSON.stringify(arr))
 }
+// let val;
+// let pinchange=()=>{
+//   document.querySelector("#codepin").innerHTML=`DELIVERY & SHIPPING <br><input id="pincode1" placeholder="400001">
+//   <button onclick="pinchange2()"> CHANGE</button>`
+//   val=document.querySelector("#pincode1").value
+  
+// }
+// let pinchange2=()=>{
+// document.querySelector("codepin").innerHTML=`DELIVERY & SHIPPING <br><h3 id="pincode">${val}</h3>
+// <button onclick="pinchange2()"> CHANGE</button>`
+// }
