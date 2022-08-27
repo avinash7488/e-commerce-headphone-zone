@@ -76,3 +76,16 @@ let getBrand5 = () => {
 //window.location.href="";
 
 }
+
+
+
+
+
+
+
+let getSearchRes = () =>{
+    let query = document.getElementById('nav_search').value 
+    localStorage.setItem("pro_page_key",(query));
+//window.location.href="";
+
+}

@@ -183,7 +183,7 @@ export function navbar(){
 
 <div id="right_menu">
     
-<input type="text" id="nav_search" placeholder="Search">
+<input type="text" id="nav_search" placeholder="Search" onkeypress="getSearchRes()">
         <p>Login</p>
         <p>cart</p>
       
