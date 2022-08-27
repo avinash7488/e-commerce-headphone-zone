@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>headphonezone</title>
     <style>
         body>h1 {
             margin-top: 50px;
@@ -231,12 +231,12 @@
 </html>
 <script>
     let arr = JSON.parse(localStorage.getItem("productpage")) || [];
-    mysefun(arr)
-
+   
     function mysefun(arr) {
         let bag = 0;
         document.querySelector("tbody").innerHTML = "";
         arr.forEach(function(el, i) {
+           
             let tr1 = document.createElement("tr");
             let td1 = document.createElement("td");
             let div1 = document.createElement("div");
@@ -251,33 +251,42 @@
             p1.innerText = el.procolor + " / " + el.fun;
             let p2 = document.createElement("p");
             p2.innerText = el.price;
+
+             //it's part of total
+
+             let bag1=1;
             let td2 = document.createElement("td");
             let div4 = document.createElement("div");
             div4.setAttribute("id", "quacheck");
-            let jhola = 1;
             let span1 = document.createElement("span");
             span1.innerText = "-";
-            span1.setAttribute("click", function() {
+            span1.addEventListener("click", function() {
                 let value = document.getElementById('quanti').innerText;
                 if (value > 1) {
                     value--;
-                    document.getElementById('quanti').innerText = value;
+                    bag1=value;
+                    document.getElementById('quanti').innerText = bag1;
+                    fundqua(bag1);
                 }
             });
             let span2 = document.createElement("span");
-            span2.setAttribute("id", "quanti")
-            span2.innerText = jhola;
+            span2.setAttribute("id", "quanti");
             let span3 = document.createElement("span");
             span3.innerText = "+";
             span3.addEventListener("click", function() {
                 let value = document.getElementById('quanti').innerText;
                 if (value < 10) {
                     value++;
-                    document.getElementById('quanti').innerText = value;
-
+                    bag1=value;
+                    document.getElementById('quanti').innerText = bag1;
+                    fundqua(bag1);
+                   
                 }
             });
-
+           function fundqua(bag1){
+                console.log(bag1);
+            }
+           
             let div5 = document.createElement("div");
             div5.setAttribute("id", "removekey");
             let u1 = document.createElement("u");
@@ -289,9 +298,16 @@
             let span4 = document.createElement("span");
             span4.setAttribute("id", "sym");
             let span5 = document.createElement("span");
+            
+            
+            //it's part of total
             span5.setAttribute("id", "totalp");
-            span5.innerText = jhola * el.price;
-            bag = bag + Number(el.price);
+            function fundqua(value){
+                let newtotal=value * Number(el.price);
+                span5.innerText = newtotal;
+                bag = bag + Number(newtotal);
+            }
+            
 
 
             tr1.append(td1, td2, td3);
@@ -305,9 +321,9 @@
             td3.append(span4, span5);
             document.getElementById("procontainer").append(tr1);
         })
-        totalprice(bag)
+        totalprice(bag);
     }
-
+ mysefun(arr);
 
     function totalprice(bag) {
         let p10 = document.createElement('p');
@@ -318,12 +334,12 @@
     function removedata(i) {
         arr.splice(i, 1);
         mysefun(arr);
-        localStorage.setItem("productpage", JSON.stringify(arr)) || [];
-        window.location.reload()
+        localStorage.setItem("productpage", JSON.stringify(arr));
+        window.location.reload();
     };
 
 
-
+    textbox.style.display = "none";
     function myfun() {
         let textbox = document.getElementById("textbox");
         if (textbox.style.display === "none") {
