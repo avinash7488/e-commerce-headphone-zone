@@ -223,7 +223,7 @@
                 <p>Shipping is always free.</p>
                 <p>No hidden surprises. 😃</p>
             </div>
-            <a href=""><button>CHECKOUT</button></a>
+            <a href="checkout.html"><button>CHECKOUT</button></a>
         </div>
     </div>
 </body>
@@ -260,29 +260,11 @@
             div4.setAttribute("id", "quacheck");
             let span1 = document.createElement("span");
             span1.innerText = "-";
-            span1.addEventListener("click", function() {
-                let value = document.getElementById('quanti').innerText;
-                if (value > 1) {
-                    value--;
-                    bag1=value;
-                    document.getElementById('quanti').innerText = bag1;
-                    fundqua(bag1);
-                }
-            });
             let span2 = document.createElement("span");
             span2.setAttribute("id", "quanti");
+            span2.innerText=1;
             let span3 = document.createElement("span");
             span3.innerText = "+";
-            span3.addEventListener("click", function() {
-                let value = document.getElementById('quanti').innerText;
-                if (value < 10) {
-                    value++;
-                    bag1=value;
-                    document.getElementById('quanti').innerText = bag1;
-                    fundqua(bag1);
-                   
-                }
-            });
            function fundqua(bag1){
                 console.log(bag1);
             }
@@ -302,11 +284,8 @@
             
             //it's part of total
             span5.setAttribute("id", "totalp");
-            function fundqua(value){
-                let newtotal=value * Number(el.price);
-                span5.innerText = newtotal;
-                bag = bag + Number(newtotal);
-            }
+            span5.innerText=el.price;
+                bag = bag + Number(el.price);
             
 
 
