@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>headphonezone</title>
+    <style>
+         *{
+           font-family:Roboto, sans-serif;
+        }
+        #paymentpage {
+            display: flex;
+            margin: 0;
+
+        }
+        
+        #comm {
+            width: 55%;
+            padding: 8%;
+            padding-top: 40px;
+        }
+        
+        #proshowpage {
+            background-color: #f5f5f5;
+            border-left: 2px solid rgb(192, 192, 192);
+            width: 43%;
+            margin-top: 0;
+            padding-top: 6px;
+            padding-right: 9%;
+            padding-left: 4%;
+           
+        }
+        #showprod{
+            height: 300px;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+        #showprod:hover{
+            overflow-y: auto;
+        }
+        #showprod>div{
+            display: flex;
+            margin: 13px 0;
+        }
+        #showprod img{
+            width: 70px;
+            border: 1.5px solid rgb(230, 230, 230);
+            border-radius: 9px;
+        }
+        .brandname{
+            margin-left: 15px;
+        }
+        .brandname>p:first-child{
+            font-size: 15.5px;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        .brandname>p:last-child{
+            font-size: 13.5px;
+            margin-top: 2px;
+        }
+       .lastprice{
+        margin: auto;
+        margin-right: 0;
+       }
+       #giftdiv{
+        margin: 30px 0;
+       }
+       #giftdiv>input{
+        width: 75%;
+        height: 40px;
+        border-radius: 4px;
+        border: 0.1px solid rgb(196, 196, 196);
+        font-size: 17px;
+       }
+       #giftdiv>button{
+        width: 20%;
+        height: 42px;
+       }
+       #subtotal{
+        margin: 24px 0 13px 0;
+        font-size: 15px;
+       }
+       #shipp{
+        margin: 0 0 24px 0;
+        font-size: 15px;
+       }
+
+       #newli,#totalprice{
+        font-weight: 600;
+        display: flex;
+        justify-content: end;
+        margin-top: -17px;
+       }
+       #tprice>span:first-child{
+       font-size: 13px;
+       margin-right: 7px;
+       margin-top: 9px;
+        }
+       #tprice>span:last-child{
+       font-size: 25px;
+       font-weight: 600;
+       }
+       #tprice{
+        display: flex;
+        justify-content: end;
+        margin-top: -25px;
+       }
+       #ltotal{
+        margin: 20px 0;
+       }
+        #newlink>p>a{
+            text-decoration: none;
+            color: black;
+
+        }
+        #newlink>p{
+            font-size: 13px;
+        }
+        #gstdiv{
+          
+            background-color: white;
+            height: 80px;
+        }
+        #gstdiv>input{
+    
+            border-radius: 30px;
+        }
+        #gstdiv>p{
+            font-size: 14px;
+        }
+#firstdiv{
+
+    background-color: #ffeba1;
+    border-radius: 15px;
+    padding: 3px;
+}
+#firstdiv>span:first-child{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+#gstdiv>span{
+font-size: 18px;
+padding-top: 20px;
+
+}
+#gstdiv{
+    text-align: center;
+};
+#addtype{
+max-width: 700px;
+padding: 50px;
+width: 100%;
+padding-right: 300px;
+}
+#comm>div>img{
+    width: 150px;
+}
+#seldiv{
+    width: 100%;
+    width: 500px;
+    border: 1px solid red;
+}
+#showmail{
+    width: 100%;
+    height: 30px;
+    border: 0.2px solid rgb(214, 214, 214);
+    margin-bottom: 30px;
+    margin-top: 0;
+    align-items: center;
+   justify-content: center;
+   padding-top: 10px;
+   padding-left: 5px;
+}
+#cone{
+    display: flex;
+}
+#cone>p{
+    justify-content: end;
+    margin: auto;
+    margin-right: 0;
+    
+}
+#cone>p>a{
+    text-decoration: none;
+    color: black;
+}
+#enew>h4{
+    margin-bottom: 5px;
+}
+#button1{
+    border: 1px solid red;
+        margin: auto;
+        margin-right: 0;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 30px;
+       padding: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #ffff;
+        background-color: blue;
+        border: none;
+        border-radius: 10px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="paymentpage">
+        <div id="comm">
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0153/8863/files/Headphone-Zone-Animated-Header_400x_b56ee274-b480-4d0f-91ae-4a16d148a93f.gif?v=1580537719" alt="">
+            </div>
+            <div id="newlink">
+                <p><a href="cart.html">Cart</a> &#62 Information &#62 Payment</p>
+            </div>
+            <div id="cone">
+                <h3>Contact information</h3>
+                <p>Already have an account?<a href=""> Log in</a></p>
+            </div>
+            <div id="enew">
+                <h4>Email</h4>
+                <div id="showmail">asdfasd</div>
+            </div>
+        <div id="firstdiv">
+        <span>GST details: </span><span>Is your organisation registered under GST ACT in India?</span>
+    
+        <div id="gstdiv">
+            <span>
+            <input type="radio" name="check1" disabled>
+            <span>Yes, registered under GST ACT</span>
+    </span>
+    <span>
+        <input type="radio" name="check1">
+        <span>No, not registered under GST ACT.</span>
+    </span>
+    
+    </div>
+    <p>Please enter your GST number now. Once order has been placed, no modifications can be made to add your GST number to the invoice.</p>
+
+</div>
+<div>
+    <h3>Shipping address</h3>
+        <div id="adddiv">
+            <div id="seldiv">
+            <select name="divse" id="addtype">
+                <option value="">name  jhfyuyufyufvjhfjh ccc</option>
+                <option value="">new</option>
+            </select>
+        </div> 
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            
+    </div>
+    <button id="button1">Continue to payment method</button>
+</div>
+        </div>
+        <div id="proshowpage">
+            <div id="showprod"></div>
+            <hr>
+            <div id="giftdiv">
+            <input type="text" placeholder="Gift card or discount code">
+            <button>APPLY</button>
+        </div>
+        <hr>
+        <div>
+            <div id="subtotal">
+                <span>Subtotal</span>
+                <span id="totalprice"></span>
+            </div>
+        <div id="shipp">
+            <span>Shipping</span>
+            <span id="newli">Free</span>
+        </div>
+        </div>
+        <hr>
+        <div id="ltotal">
+            <span>Total</span>
+            <span id="tprice">
+                <span>INR</span>
+                <span id="totalp"></span>
+            </span>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let arr = JSON.parse(localStorage.getItem("productpage")) || [];
+    printpro(arr)
+    function printpro(arr){
+        let bag=0;
+    arr.forEach(function(ele){
+    let div=document.createElement("div");
+    let div1=document.createElement("div");
+    let img=document.createElement("img");
+    img.setAttribute("src",ele.imag);
+    let div2=document.createElement("div");
+    div2.setAttribute("class","brandname")
+    let p1=document.createElement("p");
+    p1.innerText=ele.brand;
+    let p2=document.createElement("p");
+    p2.innerText=ele.procolor;
+    let div3=document.createElement("div");
+    div3.setAttribute("class","lastprice")
+    let p3=document.createElement("p");
+    p3.innerText="₹"+ele.price;
+    bag=bag+Number(ele.price);
+    div1.append(img);
+    div2.append(p1,p2);
+    div3.append(p3);
+    div.append(div1,div2,div3);
+    document.querySelector("#showprod").append(div)
+});
+totalpri(bag);
+    };
+
+
+    function totalpri(bag){
+      let finalpri= "₹"+bag.toFixed(2);
+    document.getElementById("totalprice").innerText=finalpri;
+    document.getElementById("totalp").innerText=finalpri;
+    }
+
+
+    let findkey=document.getElementById("button1");
+    findkey.addEventListener("click",function(){
+        window.location.href = "payment.html";
+    })
+</script>
