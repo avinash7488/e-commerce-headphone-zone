@@ -1,4 +1,10 @@
-  let form=document.getElementById("container")
+ import {navbar} from './navbar.js'
+
+ let navbarBox = document.getElementById('navbar_outer')
+ navbarBox.innerHTML = navbar()
+ console.log('navbarBox:', navbarBox)
+ 
+ let form=document.getElementById("container")
 
        
     

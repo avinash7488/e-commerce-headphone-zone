@@ -1,4 +1,8 @@
 
+
+
+
+
 export function footer(){
     return`<div id="footer_box">
     <div id="help">

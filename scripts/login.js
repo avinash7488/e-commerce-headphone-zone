@@ -1,3 +1,11 @@
+import {navbar} from './script/navbar.js'
+
+ let navbarBox = document.getElementById('navbar_outer')
+ navbarBox.innerHTML = navbar()
+
+
+
+
 let form = document.querySelector('form');
 let login = (event)=>{
     event.preventDefault();

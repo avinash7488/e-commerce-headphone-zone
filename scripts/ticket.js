@@ -1,3 +1,13 @@
+import {navbar} from './script/navbar.js'
+
+ let navbarBox = document.getElementById('navbar_outer')
+ navbarBox.innerHTML = navbar()
+
+
+
+
+
+
 let data = JSON.parse(localStorage.getItem("userData")) || [];
 
 class User {
@@ -47,7 +57,7 @@ let addUser = (event) => {
     alert("Thanks for raise your ticket")
     data.push(user);
     // localStorage.setItem("userData", JSON.stringify(data));
-    window.location.href="home.html";
+    window.location.href="./home.html";
   }
 };
 form.addEventListener("submit", addUser);

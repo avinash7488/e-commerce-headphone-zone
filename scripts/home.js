@@ -1,3 +1,11 @@
+import {navbar} from './script/navbar.js'
+
+ let navbarBox = document.getElementById('navbar_outer')
+ navbarBox.innerHTML = navbar()
+
+
+
+
 
 let ss_arr = [
      `  <div id="cont1">   
@@ -203,7 +211,7 @@ insta.addEventListener("click",()=>{
 
 let getthis_data1 = () =>{
 
-    localStorage.setItem("pro_page_key",("earpthone"));
+    localStorage.setItem("pro_page_key",("earphone"));
     //window.location.href="";
 
 };

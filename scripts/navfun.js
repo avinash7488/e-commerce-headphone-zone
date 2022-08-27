@@ -1,6 +1,6 @@
 let getthis_data1 = () =>{
 
-    localStorage.setItem("pro_page_key",("earpthone"));
+    localStorage.setItem("pro_page_key",("earphone"));
     //window.location.href="";
 
 };
