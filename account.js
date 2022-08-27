@@ -7,12 +7,13 @@
     let name="HELLO USER"
      container.append(name)
 
+     container2.innerText=null;
 
 function storeData(){
     // location.href="./login.html"
 
 container2.innerText=null;
- 
+container3.innerText=null;
       
     // console.log(name)}
 
@@ -52,8 +53,10 @@ container2.innerText=null;
     log.addEventListener("click",function(){
 let data2=JSON.parse( localStorage.getItem("user"))
 data2=null;
-window.location.reload();
-    })
+
+window.location.reload();    })
+
+
      
      
 div.append(edit,log)
@@ -63,10 +66,19 @@ div.append(edit,log)
 
 
   function account2(event){
+    container2.innerText=null;
+    let div=document.createElement("div")
     let mobile=document.createElement("p")
   
     mobile.innerText="RAISE A TICKET"
     
-    container2.append(mobile)}
+    let a=document.createElement("a")
+    let link=document.createTextNode("Submit a ticket ")
+    a.append(link)
+    a.title="Submit a ticket"
+  
+    a.href="ticket.html"
+    div.append(mobile,a)
+    container3.append(div)}
 
   

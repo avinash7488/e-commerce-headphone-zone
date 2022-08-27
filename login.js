@@ -25,7 +25,7 @@ let login = (event)=>{
      window.location.href='account.html'
     }else if(x.length<=0){
      alert("User doesn't exist, Sign Up");
-     window.location.href='signup.html';
+     window.location.href='create.html';
     }else if(y.length<=0){
      alert("Wrong credentials")
     }
