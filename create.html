@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign-Up</title><style>
+  *{
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+    font-weight:bolder;
+    color: black;
+    font-size: 32px;
+}
+h2{
+    text-align: center;
+    
+    color: gray;
+    font-size: 15px;
+}
+#form{
+    padding-top: 20px;
+    padding: 20px 1%;
+    width: 35%;
+    margin: auto;
+    margin-top: 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px; */
+}
+form{
+    width: 99%;
+    margin: auto;
+    margin-top: 60px;
+}
+input{
+    width: 96%;
+    height: 45px;
+    margin-bottom: 20px;
+    /* margin-top: 10px; */
+
+    border-radius: 30px;
+    border-color: rgb(228, 219, 219);
+    padding-left: 13px;
+}
+#submit{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    letter-spacing: .5px;
+    background-color: #5e45ec;
+    border: none;
+    color: white;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+#bottom{
+    width: 40%;
+    margin: auto;
+    /* margin-top: 40px; */
+    text-align: center;
+    padding: 0% 1%;
+    
+    
+}
+#bottom>h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    color: rgb(151, 146, 146);
+}
+
+
+
+    </style>
+  </head>
+  <body>
+  
+      
+      <div id="form">
+        <h1>REGISTER
+          </h1>
+          <h2>   Please fill in the fields below:</h2>
+        <form>
+          <input type="text" name="" id="name" placeholder="First name" />
+          <input type="text" name="" id="last_name" placeholder="Last  name" />
+          <input type="text" name="" id="email" placeholder="E-mail" />
+          <input
+            type="password"
+            name=""
+            id="password"
+            placeholder="Password"
+            minlength="8"
+            maxlength="256"
+          />
+          <!-- <label>between 8 to 256 characters</label> -->
+          <input type="submit" name="" id="submit" value="CREATE ACCOUNT" />
+
+        </div>
+        <div id="bottom">
+            <h2 class="ul" >Already have an account?
+              <a href="login.html">Login</a>
+            </h2>
+    </form>
+      <!-- - The input fields will have ids:- "name", "email" and "password"
+  - The sign-up button will have id:- "sign_up". -->
+    </div>
+  </body>
+</html><script src="./create.js"></script>
