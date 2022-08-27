@@ -5,7 +5,7 @@ let ss_arr = [
      <div>
      <h1>CLASSY AND STYLISH</h1>
      <h5>MADE IN INDIA UNDER 2K</h5>
-     <button>SEE MORE</button>
+     <button><a href="https://www.headphonezone.in/products/ibasso-dx170?homepage">SEE MORE</a></button>
      </div>
  </div>`,
  ` <div id="cont2">
@@ -13,7 +13,7 @@ let ss_arr = [
 <div>
  <h1 class="header">MEET THE OVERACHIVER</h1>
  <h5>SELECT THAT GOES WITH YOUR WIBE</h5>
- <button>EXPLORE MORE</button>
+ <button><a href="https://www.headphonezone.in/products/letshuoer-s12?homepage">BUY NOW</a></button>
 </div>
 </div>`,
 `<div id="cont3">
@@ -21,7 +21,7 @@ let ss_arr = [
 <div>
 <h1 class="header">TIME TO (PORTABLE) PARTY</h1>
 <h5>ALWAYS SOMETHING NEW TO EXPLORE</h5>
-<button>SEE MORE</button>
+<button><a href="https://www.headphonezone.in/collections/fiio?sort_by=manual&filter.p.product_type=Amps+%26+DACs&filter.v.price.gte=&filter.v.price.lte=">SEE MORE</a></button>
 </div>
 </div>`,
 `<div id="cont2">
@@ -29,7 +29,7 @@ let ss_arr = [
 <div>
 <h1 class="header">CLASSY CANS WITH CALIBER</h1>
 <h5>MADE IN INDIA BY AND AUDIOPHILES: ALTIAT CAL.1H</h5>
-<button>SHOP NOW</button>
+<button><a href="https://www.headphonezone.in/products/altiat-cal-1h?homepage">SEE MORE</a></button>
 </div>
 </div>`
 ];
@@ -123,7 +123,11 @@ let card = document.createElement("div");
 card.setAttribute("class","card")
 card.addEventListener("click",()=>{
    
+  
 console.log(ele)
+localStorage.setItem("pro_detail",JSON.stringify(ele))
+
+//window.location.href="";     location to cart page
 
 })
 card.append(img,name,dis,price,img_div,rating)
@@ -192,6 +196,10 @@ let insta = document.querySelector(".stories");
 insta.addEventListener("click",()=>{
     window.location.href="https://www.instagram.com/reel/ChZv3Y1uDxA/"
 });
+
+
+
+// productpg call from categories
 
 let getthis_data1 = () =>{
 

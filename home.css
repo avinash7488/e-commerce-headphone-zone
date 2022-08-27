@@ -366,7 +366,6 @@ iframe{
 }
 .stories div{
     width: 100%;
-
     overflow: hidden;
     margin: auto;
 }
@@ -490,11 +489,18 @@ height:800px;
     width: 15px;
     margin: 5px;
 }
-.rating{
 
-  
+#slideshow button>a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #444444;
 }
-
+.pic{
+    overflow: hidden;
+}
+.pic img:hover{
+transform: scale(1.3);
+}
 
 
 
