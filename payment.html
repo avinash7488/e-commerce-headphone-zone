@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>headphonezone</title>
     <style>
         *{
            font-family:Roboto, sans-serif;
@@ -13,9 +13,9 @@
         #paymentpage {
             display: flex;
             margin: 0;
-
-        }
         
+        }
+       
         #newlink>p>a{
             text-decoration: none;
             color: black;
@@ -29,7 +29,7 @@
             width: 150px;
         }
         #comm {
-            width: 58%;
+            width: 48%;
             padding: 8%;
             padding-top: 60px;
         }
@@ -37,7 +37,7 @@
         #proshowpage {
             background-color: #f5f5f5;
             border-left: 2px solid rgb(192, 192, 192);
-            width: 45%;
+            width: 38%;
             margin-top: 0;
             padding-top: 6px;
             padding-right: 9%;
@@ -142,6 +142,7 @@
        #paysy1{
         width: 100%;
         border: 1px solid rgb(182, 182, 182);
+        border-radius: 15px;
        }
     
        #payimg img{
@@ -155,8 +156,8 @@
         font-size: 13px;
         margin-top: -9px;
        }
-       #payall{
-        border: 1px solid rgb(34, 34, 34);
+       .newaa{
+        border: 0.01px solid rgb(206, 206, 206);
        }
        #firs{
         width: 100%;
@@ -174,6 +175,93 @@
        #firs>div>span{
         margin: 2px;
        }
+       #finkey{
+        border: 1px solid red;
+        margin: auto;
+        margin-right: 0;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 30px;
+       padding: 20px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #ffff;
+        background-color: blue;
+        border: none;
+        border-radius: 10px;
+       }
+       #result{
+        width: 92%;
+        border: 1px solid rgb(185, 185, 185);
+        padding: 20px;
+       }
+       #result>img,#result1>img{
+        max-width: 500px;
+        width: 100%;
+        align-items: center;
+      
+       }
+       #result2>img{
+        max-width: 500px;
+        width: 100%;
+        align-items: center;
+      border-radius: 0 0 15px 15px;
+       }
+       #result,#result1,#result2{
+        border-top: 1px solid rgb(224, 224, 224);
+       }
+       #bill{
+        margin-top: 50px;
+       }
+       #bill>h2{
+        margin-top: 1px;
+       }
+       #bill>p{
+        margin-top: 1px;
+       }
+       #fincard{
+        display: flex;
+       
+       }
+       #fincard>span>p{
+        margin-bottom: 2px;
+       }
+       #fincard>div:nth-child(1)>input{
+       width: 75%;
+    
+       }
+       #fincard>div:nth-child(2)>input{
+        width: 20%;
+    }
+       
+       #tdate{
+        display: flex;
+       }
+       #tdate>div>p{
+        margin-bottom: 2px;
+       }
+       @media screen and (min-device-width: 200px) and (max-device-width: 800px) {
+            #paymentpage {
+            display: block;
+          
+        }
+        #comm {
+            width: 100%;
+            padding: 8%;
+            padding-top: 60px;
+        }
+        
+        #proshowpage {
+            background-color: #f5f5f5;
+            border-left: 2px solid rgb(192, 192, 192);
+            width: 100%;
+            margin-top: 0;
+            padding-top: 6px;
+            padding-right: 9%;
+            padding-left: 4%;
+           
+        }
+        }
     </style>
 </head>
 
@@ -202,10 +290,11 @@
         <div>
             <h2>Payment</h2>
             <p>All transactions are secure and encrypted.</p>
-            <div id="paysy1">
+            <form id="paysy1" name="paysy1" onclick="myfunction()">
                 <div>
                     <div class="payall">
-                        <input type="radio">
+        
+                        <input type="radio" name="checkq" value="check1"/>
                         <span id="paytype">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</span>
                         <span id="payimg">
                         <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg">
@@ -215,25 +304,51 @@
                         <span>and more…</span>
                     </span>
                     </div>
-                    <div></div>
+                    <div id="result">
+                        <div id="fincard">
+                        <div>
+                           <p>CARD NUMBER</p> 
+                            <input type="number" id="va1" placeholder="1234 1234 1234 1234">
+                        </div>
+                       <div>
+                        <p>CVV</p> 
+                        <input type="number" id="va2" placeholder="123" min="1">
+                       </div>
+
+                    </div>
+                        <p>EXP DATE</p>
+                        <div id="tdate">
+                            <div>
+                        <p>MM</p>
+                        <input type="number" id="va3" placeholder="mm" min="01" max="12">
+                    </div>
+                    <div>
+                        <p>YYYY</p>
+                        <input type="number" id="va4" placeholder="yyyy" min="2010" max="2050">
+                    </div>
+                    </div>
+                    </div>
                 </div>
                 <div>
-                    <div class="payall">
-                        <input type="radio">
+                    <div class="payall newaa" >
+                       
+                        <input type="radio" name="checkq" value="check2" />
                         <span id="paytype">Razorpay Secure (UPI, Cards, Wallets, NetBanking)</span>
                         <span id="payimg">
                         <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg">
                         <img src="https://cdn.vox-cdn.com/thumbor/FtAV-Waa1rTPheAkxv3o4i0MVf0=/0x0:1000x1000/1200x800/filters:focal(421x430:581x590)/cdn.vox-cdn.com/uploads/chorus_image/image/62800797/Mastercard_logo.0.jpg">
                         <img src="https://1000logos.net/wp-content/uploads/2021/05/Discover-logo.png">
-                        <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/wp-cms/uploads/2018/04/4-you-might-not-notice-amex-new-brand.jpg">
+                        <img src="https://1000logos.net/wp-content/uploads/2016/10/American-Express-Color.png">
                         <span>and more…</span>
                     </span>
                     </div>
-                    <div></div>
+                    <div id="result1">
+                        <img src="https://www.psdcovers.com/wp-content/uploads/2016/09/paypal-no-payment-method-error.jpg?x26907" alt="">
+                    </div>
                 </div>
                 <div>
                     <div class="payall">
-                        <input type="radio">
+                        <input type="radio" name="checkq" id="checkq" value="check3" />
                         <span>Cashfree Payments</span>
                         <span id="payimg">
                         <img src="https://usa.visa.com/dam/VCOM/regional/ve/romania/blogs/hero-image/visa-logo-800x450.jpg">
@@ -241,26 +356,25 @@
                         <span>and more…</span>
                     </span>
                     </div>
-                    <div></div>
+                    <div id="result2">
+                        <img src="https://www.psdcovers.com/wp-content/uploads/2016/09/paypal-no-payment-method-error.jpg?x26907" alt="">
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
-        <div>
+        <div id="bill">
             <h2>Billing address</h2>
             <p>Select the address that matches your card or payment method.</p>
+
             <div id="firs">
-                <div>
-                    <input type="radio">
-                    <span>Same as shipping address</span>
-                </div>
+                <input type="radio" name="check" checked/>
+                <span>Same as shipping address</span>
                 <hr>
-                <div>
-                    <input type="radio">
-                    <span>Use a different billing address</span>
-                </div>
-            </div>
+                <input type="radio" name="check" disabled />
+                <span>Use a different billing address</span>
+              </div>
         </div>
-        <button>Complete order</button>
+        <button id="finkey">Complete order</button>
         </div>
 
             <div id="proshowpage">
@@ -296,13 +410,41 @@
 </html>
 
 
+<script>
+    document.getElementById("result").style.display="none";
+    document.getElementById("result1").style.display="none";
+    document.getElementById("result2").style.display ="none";
 
+   document.paysy1.onclick = function(){
+    let findva = document.querySelector("#paysy1").checkq.value;
+    if(findva=="check1"){
+        document.getElementById("result").style.display="block";
+    }else{
+        document.getElementById("result").style.display="none";
+    }
+    if(findva=="check2"){
+        document.getElementById("result1").style.display="block";
+    }else{
+        document.getElementById("result1").style.display="none";
+    } 
+if(findva=="check3"){
+        document.getElementById("result2").style.display="block";
+    }else{
+        document.getElementById("result2").style.display ="none";
+    }
+    
+}
+
+
+
+</script>
 
 
 
 
 <script>
     let arr = JSON.parse(localStorage.getItem("productpage")) || [];
+    let arr2=JSON.parse(localStorage.getItem("finalcheck"))||[];
     printpro(arr)
     function printpro(arr){
         let bag=0;
@@ -337,4 +479,25 @@ totalpri(bag);
     document.getElementById("totalprice").innerText=finalpri;
     document.getElementById("totalp").innerText=finalpri;
     }
+let arr1=[];
+
+    let findbutton=document.getElementById("finkey");
+    findbutton.addEventListener("click",function(){
+        let fivalue=document.getElementById("va1").value;
+let fivalue1=document.getElementById("va1").value;
+let fivalue2=document.getElementById("va1").value;
+let fivalue3=document.getElementById("va1").value;
+if(fivalue=="" && fivalue1=="" && fivalue2=="" && fivalue3==""){
+    alert("Fill All Card Details");
+}else{
+        arr.forEach(function(ele){
+            arr2.push(ele);
+        localStorage.setItem("finalcheck",JSON.stringify(arr2));
+        })
+        localStorage.setItem("productpage",JSON.stringify(arr1));
+        window.location.replace("success.html")
+    }
+    });
+    
+    
 </script>
