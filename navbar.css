@@ -45,9 +45,10 @@
 	
 }
 
-.nav_mega_menu ul li p {
+.nav_mega_menu ul li>p,a {
 	
 	font-size: 15px;
+    font-weight: bold;
 	
 }
 
@@ -57,7 +58,7 @@ table td img{
 	/* border: 1px solid; */
 	/* height: 60px; */
 }
-table td{
+#category_sec{
 	text-align: center;
 	/* border: 1px solid; */
 }
@@ -68,7 +69,7 @@ table p{
 .nav_mega_menu ul li .nav_sub_menu{
 	position: absolute;
 	background-color: white;
-	width: 130%;
+	width: 135%;
 	left: -15%;
 	top: 83px;
 	padding: 25px 15px;
@@ -104,8 +105,8 @@ table p{
 } 
  .nav_mega_menu ul li .nav_sub_menu p{
 	margin-top: 15px;
-	font-size: 12px;
-	font-weight: bold;
+	font-size: 15px;
+	
 } 
 
 
@@ -125,6 +126,9 @@ table p{
 }
 #sub_menu_info p{
 	font-size: 15px;
+}
+#sub_menu_info{
+    margin-left: 20px;
 }
 #sub_menu_info .col{
 	width: 25%;
@@ -167,37 +171,39 @@ table p{
 #right_menu{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 10%;
+    gap: 5px;
     cursor: pointer;
 	margin-top: 10px;
+    /* border: 1px solid; */
+    text-align: center;
+    width: 300px;
+}
+#right_menu input{
+    margin-right: 30px;
+}
+#right_menu p{
+    font-weight: bold;
 }
 #nav_quant_cart{
-    margin-left: -15px;
+    margin-left: -13px;
     border: 1px solid;
     height: 20px;
     width: 20px;
     text-align: center;
     border-radius: 20px;
-    background-color: black;
+    background-color: gray;
     color: white;
     font-weight: lighter;
 }
 
-#nav_right_opt{
-	width: 100%;
-	height: 1000px;
-	border: 1px solid ;
-	display: flex;
-	justify-content: flex-end;
-}
-#search_div{
-	visibility: hidden;
-	height:100%;
-	width: 25%;
-	border: 1px solid;
-}
 
 #helpcenter>a{
     color: black;
     text-decoration: none;
+}
+
+#nav_search{
+    width: 100px;
+  height: 20px;
+  margin-top: 18px;
 }
