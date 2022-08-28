@@ -1,13 +1,10 @@
-import {navbar} from './script/navbar.js'
-
- let navbarBox = document.getElementById('navbar_outer')
- navbarBox.innerHTML = navbar()
 
 
+let newdata;
+let zip=(localStorage.getItem("pro_page_key"));
+console.log('zip:', zip)
 
-let zip=JSON.parse(localStorage.getItem("pro_page_key"));
-
-import {getData,filter1,filter2,filter3,filter4,filter5,filter6,filter7,filter8,filter9,filter10,filter11,filter12,filter13,filter14,filter15,sort1,sort2,price1,price2,price3,price4,price5} from "../component/search.js"
+import {getData,filter1,filter2,filter3,filter4,filter5,filter6,filter7,filter8,filter9,filter10,filter11,filter12,filter13,filter14,filter15,sort1,sort2,price1,price2,price3,price4,price5,showelem} from "../component/search.js"
 
 
 let main=async(zip)=>{
@@ -63,7 +60,7 @@ let append=(data)=>{
 }
 
 let display=(zip,data)=>{
-let newdata=data.filter((el)=>{
+ newdata=data.filter((el)=>{
     return el.categories===zip
 })
 append(newdata)
@@ -114,40 +111,40 @@ brand.innerHTML=`
 
 div.append(brand)
 document.getElementById('brand1').addEventListener("click", function() {
-    filter1()
+    filter1(newdata)
 })
 document.getElementById('brand2').addEventListener("click", function() {
-    filter2()
+    filter2(newdata)
 })
 document.getElementById('brand3').addEventListener("click", function() {
-    filter3()
+    filter3(newdata)
 })
 document.getElementById('brand4').addEventListener("click", function() {
-    filter4()
+    filter4(newdata)
 })
 document.getElementById('brand5').addEventListener("click", function() {
-    filter5()
+    filter5(newdata)
 })
 document.getElementById('brand6').addEventListener("click", function() {
-     filter6()
+     filter6(newdata)
 })
 document.getElementById('brand7').addEventListener("click", function() {
-    filter7()
+    filter7(newdata)
 })
 document.getElementById('brand8').addEventListener("click", function() {
-    filter8()
+    filter8(newdata)
 })
 document.getElementById('brand9').addEventListener("click", function() {
-    filter9()
+    filter9(newdata)
 })
 document.getElementById('brand10').addEventListener("click", function() {
-    filter10()
+    filter10(newdata)
 })
 document.getElementById('brand11').addEventListener("click", function() {
-    filter11()
+    filter11(newdata)
 })
 document.getElementById('brand12').addEventListener("click", function() {
-    filter12()
+    filter12(newdata)
 })
 document.querySelector("#brandbut1").addEventListener("click",()=>{
     brand.innerHTML=null;
@@ -174,13 +171,13 @@ document.querySelector("#productbut2").addEventListener("click", function(){
     `
     div.append(cat)
     document.getElementById('head').addEventListener("click", function() {
-        filter13()
+        filter13(newdata)
     })
     document.getElementById('ear').addEventListener("click", function() {
-        filter15()
+        filter15(newdata)
     })
     document.getElementById('earphones').addEventListener("click", function() {
-        filter14()
+        filter14(newdata)
     })
     document.querySelector("#productbut1").addEventListener("click",()=>{
         cat.innerHTML=null;
@@ -197,10 +194,10 @@ document.querySelector("#pricebut2").addEventListener("click", () => {
     <button id="lth">Low to high</button>`
     price.append(div1)
     document.getElementById('lth').addEventListener("click", function() {
-        sort1()
+        sort1(newdata)
     })
     document.getElementById('htl').addEventListener("click", function() {
-        sort2()
+        sort2(newdata)
     })
     document.querySelector("#pricebut1").addEventListener("click",()=>{
         price.innerHTML=null;
@@ -226,17 +223,17 @@ document.querySelector("#availbut1").addEventListener("click",()=>{
 })
 })
 document.querySelector("#price1").addEventListener("click",()=>{
-    price1()
+    price1(newdata)
 })
 document.querySelector("#price2").addEventListener("click",()=>{
-    price2()
+    price2(newdata)
 })
 document.querySelector("#price3").addEventListener("click",()=>{
-    price3()
+    price3(newdata)
 })
 document.querySelector("#price4").addEventListener("click",()=>{
-    price4()
+    price4(newdata)
 })
 document.querySelector("#price5").addEventListener("click",()=>{
-    price5()
+    price5(newdata)
 })

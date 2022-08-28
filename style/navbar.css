@@ -6,7 +6,7 @@
     /* font-family:  sans-serif; */
     list-style: none;
     margin: 0;
-	/* border: 1px solid; */
+	
 	display: flex;
     justify-content: space-around;
 	height: 80px;
@@ -18,30 +18,27 @@
 .nav_mega_menu{
 	width: 75%;
 	height: 100%;
-	margin-top: -20px;
-    margin-left: -100px;
-	/* border: 1px solid red; */
+	
+    
 }
 
 
 .nav_mega_menu>ul{
-	width: 100%;
+	width: 80%;
 	height: 100%;
 	text-align: center;
 	line-height: 60px;
-	position: relative;
-    top: 0px;
-	
-	/* left: 15%; */
-	
+	/* position: relative;
+    top: 0px; */
+	margin-left: 100px;
+	margin-top: -20px;
 }
 
 .nav_mega_menu ul li {
 	display: inline-block;
 	margin:  15px;
-	/* padding: 0 15px; */
 	text-align: left;
-	margin-top: -8px;
+	margin-top: -px;
 	
 }
 
@@ -52,25 +49,21 @@
 	
 }
 
-table td img{
+#navbar_outer table td img{
 	width: 70px;
-	/* height: 80px; */
-	/* border: 1px solid; */
-	/* height: 60px; */
 }
 #category_sec{
 	text-align: center;
-	/* border: 1px solid; */
 }
-table p{
+#navbar_outer table p{
 	margin-top: -10px;
 }
 
 .nav_mega_menu ul li .nav_sub_menu{
 	position: absolute;
 	background-color: white;
-	width: 135%;
-	left: -15%;
+	width: 115%;
+	left: -10%;
 	top: 83px;
 	padding: 25px 15px;
 	display: flex;
@@ -99,10 +92,7 @@ table p{
 	transition: all 0.5s ease
 } 
 
- .nav_mega_menu ul li .nav_sub_menu img{
-	/* width: 50px;
-	height: 50px; */
-} 
+
  .nav_mega_menu ul li .nav_sub_menu p{
 	margin-top: 15px;
 	font-size: 15px;
@@ -151,10 +141,6 @@ table p{
 	border-radius: 10px;	
 } 
 
-
-#sub_menu_brands table tr{
-	line-height: 0%;
-}
 #sub_menu_brands table{
 	width: 65%;
 	
@@ -165,6 +151,7 @@ table p{
     display: flex;
     cursor: pointer;
    margin-left: 30px;
+   margin-top: -20px;
 }
 
 
@@ -179,12 +166,18 @@ table p{
     width: 300px;
 }
 #right_menu input{
-    margin-right: 30px;
+   margin-left: -59px;
+   margin-bottom: 10px;
+	font-size: 15px;
+}
+#right_menu{
+
+width: 300px;
 }
 #right_menu p{
     font-weight: bold;
 }
-#nav_quant_cart{
+#quantity{
     margin-left: -13px;
     border: 1px solid;
     height: 20px;
@@ -203,7 +196,7 @@ table p{
 }
 
 #nav_search{
-    width: 100px;
-  height: 20px;
+    width: 150px;
+  height: 30px;
   margin-top: 18px;
 }

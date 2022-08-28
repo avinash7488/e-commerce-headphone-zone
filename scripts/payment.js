@@ -1,8 +1,3 @@
-import {navbar} from './script/navbar.js'
-
- let navbarBox = document.getElementById('navbar_outer')
- navbarBox.innerHTML = navbar()
-
 
 
 
@@ -34,7 +29,7 @@ if(findva=="check3"){
 
 
 
-let arr = JSON.parse(localStorage.getItem("productpage")) || [];
+let arr = JSON.parse(localStorage.getItem("datastore"));
 let arr2=JSON.parse(localStorage.getItem("finalcheck"))||[];
 printpro(arr)
 function printpro(arr){
@@ -43,13 +38,13 @@ arr.forEach(function(ele){
 let div=document.createElement("div");
 let div1=document.createElement("div");
 let img=document.createElement("img");
-img.setAttribute("src",ele.imag);
+img.setAttribute("src",ele.mainimg);
 let div2=document.createElement("div");
 div2.setAttribute("class","brandname")
 let p1=document.createElement("p");
-p1.innerText=ele.brand;
+p1.innerText=`${ele.name} - ${ele.model}`;
 let p2=document.createElement("p");
-p2.innerText=ele.procolor;
+p2.innerText=ele.description;
 let div3=document.createElement("div");
 div3.setAttribute("class","lastprice")
 let p3=document.createElement("p");
@@ -85,7 +80,27 @@ alert("Fill All Card Details");
         arr2.push(ele);
     localStorage.setItem("finalcheck",JSON.stringify(arr2));
     })
-    localStorage.setItem("productpage",JSON.stringify(arr1));
+    localStorage.setItem("datastore",JSON.stringify(arr1));
     window.location.href = "success.html";
 }
 });
+
+let arr3=JSON.parse(localStorage.getItem("userData")) || [];
+
+mynewne(arr3)
+function mynewne(arr3){
+console.log(arr3);
+arr3.forEach(function(el){
+console.log(el);
+let finmail=el.email;
+document.getElementById("showemail").append(finmail);
+});
+};
+
+
+let arr4=JSON.parse(localStorage.getItem("addall")) || [];
+mynewne(arr4)
+function mynewne(arr4){
+let finmail=arr4.vill+", "+arr4.city+", "+arr4.state+" -"+arr4.pin;
+document.getElementById("showaddd").innerText=finmail;
+};

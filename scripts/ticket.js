@@ -1,8 +1,3 @@
-import {navbar} from './script/navbar.js'
-
- let navbarBox = document.getElementById('navbar_outer')
- navbarBox.innerHTML = navbar()
-
 
 
 
@@ -49,15 +44,17 @@ let addUser = (event) => {
   let user = new User(name,email,phone,url,last_name);
   let flag = user.checkData(email);
   if (flag) {
-    alert("ticket already exist");
+    alert("Thanks for raise your ticket")
+    window.location.href="./index.html";
    // window.location.reload();
     return;
   }
   if (flag !== 0) {
-    alert("Thanks for raise your ticket")
     data.push(user);
+    alert("Thanks for raise your ticket");
+    window.location.href="./index.html";
     // localStorage.setItem("userData", JSON.stringify(data));
-    window.location.href="./home.html";
+   
   }
 };
 form.addEventListener("submit", addUser);

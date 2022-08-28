@@ -1,9 +1,3 @@
-import {navbar} from './script/navbar.js'
-
- let navbarBox = document.getElementById('navbar_outer')
- navbarBox.innerHTML = navbar()
-
-
 
 
 let data=JSON.parse(localStorage.getItem("headphone"))
@@ -143,6 +137,9 @@ newdiv.setAttribute("id","newdiv")
       })
       button.innerText="Add to Cart"
       button.setAttribute("id","buttoncart")
+      button.addEventListener("click",()=>{
+        window.location.href="cart.html"
+      })
       let button2=document.createElement("button")
       button2.innerText="CONFUSED? TALK TO A HEADPHONE GURU"
       button2.setAttribute("id","buttoncart2")
@@ -156,7 +153,7 @@ newdiv.setAttribute("id","newdiv")
 }
 append(data)
 let adddata=(data)=>{
-  let arr=[]
+  let arr=JSON.parse(localStorage.getItem("datastore"))||[];
   arr.push(data)
     localStorage.setItem("datastore",JSON.stringify(arr))
 }

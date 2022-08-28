@@ -7,7 +7,15 @@
     <title>Document</title>
 </head>
 <link rel="stylesheet" href="./style/product1.css">
+
+<link rel="stylesheet" href="./style/navbar.css">
+<link rel="stylesheet" href="./style/footer.css">
+ <link rel="icon" href="https://www.consumercomplaints.in/thumb.php?bname=1&src=headphone-zone.png&wmax=900&hmax=900&quality=90&nocrop=1">
+
 <body>
+
+  <div id="navbar_outer"></div>
+
   <div id="big">
     <img src="https://cdn.shopify.com/s/files/1/0153/8863/collections/Meze_99_neo_1350x.jpg?v=1649765748" alt="">
     <h1>BEGINNER <br>
@@ -40,8 +48,22 @@
         <div id="display"></div>
     </div>
   
+    <div id="footer_counter"></div>
+
 </body>
 </html>
-<script src="./scripts/product1.js" type="module">
+<script src="./scripts/navfun.js"></script>
+<script src="./scripts/product1.js" type="module"></script>
     
-</script>
+    <script type="module">
+    import {navbar} from './scripts/navbar.js'
+    import {footer} from './scripts/footer.js'
+    
+     let navbarBox = document.getElementById('navbar_outer')
+     navbarBox.innerHTML = navbar()
+     
+     let footerBox = document.getElementById('footer_counter')
+     footerBox.innerHTML = footer()
+    
+    </script>
+  

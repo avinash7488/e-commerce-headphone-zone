@@ -12,7 +12,7 @@ export function navbar(){
     return`<div id="logo">
        
 
-    <img src="https://assets.rha-audio.com/nzssx/c/Headphone_zone_logo_3-small.png" alt="">
+    <a href="./index.html"> <img src="https://assets.rha-audio.com/nzssx/c/Headphone_zone_logo_3-small.png" alt=""></a>
   </div>
 
 <div class="nav_mega_menu">
@@ -138,7 +138,7 @@ export function navbar(){
            </tt>       
         </li>
         <li><p>Deals</p></li>
-        <li><p>Headphone Finder</p></li>
+       
         <li><p>Events</p></li>
         <li><p>Forum</p></li>
         <li><p>Info</p>
@@ -182,14 +182,11 @@ export function navbar(){
 </div>
 
 <div id="right_menu">
-    
-<input type="text" id="nav_search" placeholder="Search" onkeypress="getSearchRes()">
-        <p>Login</p>
+   
+        <input type="text" id="nav_search" placeholder="Search">
+        <a href="./login.html"><p id="navlogin">Login</p></a>
         <p>cart</p>
-      
-      
-      
-      <p id="nav_quant_cart">0</p>
+       
 </div>`
 }
 

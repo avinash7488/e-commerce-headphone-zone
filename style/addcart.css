@@ -103,16 +103,20 @@
     background-color:#e6e6e6;
     color: black;
     font-size:medium;
-    cursor:pointer
+    cursor:pointer;
 }
 /* #newdiv{
     width:500px
 } */
 #table{
-    position: absolute;
+    /* position: absolute;
     top:650px;
-    left:600px;
-    
+    left:600px; */
+    width: 50%;
+    margin-left: 40%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #f9f9f9;
 }
 #firstrow button{
     background-color:transparent;
@@ -156,6 +160,7 @@ margin-top: -32px;
     margin-top: 40px;
     width:600px;
     margin-left: -25px;
+   
 }
 #fourthrow{
     display: flex;
@@ -171,13 +176,17 @@ hr{
     display:grid;
     grid-template-columns: repeat(6,1fr);
     gap:20px;
-    position: relative;
+    /* position: relative;
     top:600px;
-    left:40px
+    left:40px */
 }
 #low img{
     width:100px;
     height:100px;
     border-radius: 100px;
     margin: auto;
+}
+
+body{
+    margin: 0%;
 }

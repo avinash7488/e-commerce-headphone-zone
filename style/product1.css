@@ -18,29 +18,37 @@
     gap: 20px;
 }
 #display>div>img{
-    width:240px;
-    height:260px;
+    width:100%;
+    height:450px;
     cursor: pointer;
 }
 #display{
-    width:900px;
+    width:70%;
+    
+    font-size: 30px;
 }
 #costdiv{
     display: flex;
+
 }
 #costdiv>h3{
     margin-right: 20px;
 }
 #main{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    margin: auto;
     margin-top: 30px;
+    
 }
 #sidebar{
     position:sticky;
     top: 5px;
     left:10px;
-    width:300px;
+    width:400px;
+    font-size: 30px;
+    text-align: end;
+   
     
    
 }

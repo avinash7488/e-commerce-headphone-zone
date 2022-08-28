@@ -8,9 +8,13 @@
   
 
     <link rel="stylesheet" href="./style/ticket.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+<link rel="stylesheet" href="./style/footer.css">
+ <link rel="icon" href="https://www.consumercomplaints.in/thumb.php?bname=1&src=headphone-zone.png&wmax=900&hmax=900&quality=90&nocrop=1">
+
   </head>
   <body>
-  
+    <div id="navbar_outer"></div>
       
       <div id="form">
         <h1>submit ticket
@@ -37,5 +41,20 @@
       <!-- - The input fields will have ids:- "name", "email" and "password"
   - The sign-up button will have id:- "sign_up". -->
     </div>
+
+    <div id="footer_counter"></div>
   </body>
 </html><script src="./scripts/ticket.js"></script>
+<script src="./scripts/navfun.js"></script>
+
+<script type="module">
+  import {navbar} from './scripts/navbar.js'
+  import {footer} from './scripts/footer.js'
+  
+   let navbarBox = document.getElementById('navbar_outer')
+   navbarBox.innerHTML = navbar()
+   
+   let footerBox = document.getElementById('footer_counter')
+   footerBox.innerHTML = footer()
+  
+  </script>

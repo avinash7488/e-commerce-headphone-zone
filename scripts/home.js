@@ -1,7 +1,4 @@
-import {navbar} from './script/navbar.js'
 
- let navbarBox = document.getElementById('navbar_outer')
- navbarBox.innerHTML = navbar()
 
 
 
@@ -57,7 +54,7 @@ let ss = document.querySelector("#slideshow");
 ss.innerHTML=ss_arr[count];
 
 }
-setInterval(start_ss,3000);
+setInterval(start_ss,5000);
 
 
 //****CHART TOPPING HEADPHONES**** 
@@ -133,9 +130,9 @@ card.addEventListener("click",()=>{
    
   
 console.log(ele)
-localStorage.setItem("pro_detail",JSON.stringify(ele))
+localStorage.setItem("headphone",JSON.stringify(ele))
 
-//window.location.href="";     location to cart page
+window.location.href="./addcart.html";    // location to cart page
 
 })
 card.append(img,name,dis,price,img_div,rating)
@@ -212,42 +209,46 @@ insta.addEventListener("click",()=>{
 let getthis_data1 = () =>{
 
     localStorage.setItem("pro_page_key",("earphone"));
-    //window.location.href="";
+    window.location.href="./product1.html";
+
 
 };
 
 let getthis_data2 = () => {
 
     localStorage.setItem("pro_page_key",("headphone"));
-//window.location.href="";
+    window.location.href="./product1.html";
 
 };
 
 let getthis_data3 = () => {
 
     localStorage.setItem("pro_page_key",("wireless earbuds"));
-    //window.location.href="";
+    window.location.href="./product1.html";
+
 
 };
 
 let getthis_data4 = () => {
 
     localStorage.setItem("pro_page_key",("wireless headphones"));
-//window.location.href="";
+    window.location.href="./product1.html";
+
 
 };
 
 let getthis_data5 = () => {
 
     localStorage.setItem("pro_page_key",("earphone"));
-//window.location.href="";
+    window.location.href="./product1.html";
 
 }
 
 let getthis_data6 = () => {
 
     localStorage.setItem("pro_page_key",("work from home"));
-//window.location.href="";
+    window.location.href="./product1.html";
+
 
 }
 

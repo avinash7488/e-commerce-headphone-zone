@@ -495,12 +495,11 @@ height:800px;
     font-weight: bold;
     color: #444444;
 }
-.pic{
-    overflow: hidden;
+
+p{
+  font-size: 20px;
 }
-.pic img:hover{
-transform: scale(1.3);
-}
+
 
 
 

@@ -7,9 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>headphonezone</title>
     <link rel="stylesheet" href="./style/checkout.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+<link rel="stylesheet" href="./style/footer.css">
+ <link rel="icon" href="https://www.consumercomplaints.in/thumb.php?bname=1&src=headphone-zone.png&wmax=900&hmax=900&quality=90&nocrop=1">
+
 </head>
 
 <body>
+    <div id="navbar_outer"></div>
+
     <div id="paymentpage">
         <div id="comm">
             <div>
@@ -24,7 +30,7 @@
             </div>
             <div id="enew">
                 <h4>Email</h4>
-                <div id="showmail">asdfasd</div>
+                <div id="showmail"></div>
             </div>
         <div id="firstdiv">
         <span>GST details: </span><span>Is your organisation registered under GST ACT in India?</span>
@@ -45,25 +51,24 @@
 </div>
 <div>
     <h3>Shipping address</h3>
-        <div id="adddiv">
-            <div id="seldiv">
-            <select name="divse" id="addtype">
-                <option value="">name  jhfyuyufyufvjhfjh ccc</option>
-                <option value="">new</option>
-            </select>
-        </div> 
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            
+    <div id="adddiv">
+      <select name="divse" id="addtype">
+        <option>Country/region</option>
+        <option value="india">India</option>
+      </select>
+
+      <div id="na1">
+        <input type="text" id="fi1" placeholder="First Name" required/>
+        <input type="text" id="fi2" placeholder="Last Name" required/>
+        <input type="text" id="fi3" placeholder="Address"required/>
+        <input type="text" id="fi4" placeholder="City"required/>
+        <input type="text" id="fi5" placeholder="State"required/>
+        <input type="text" id="fi6" placeholder="Pin Code"required/>
+          <input type="text" id="fi7" placeholder="Phone"required/>
     </div>
     <button id="button1">Continue to payment method</button>
-</div>
+  </div>
+        </div>
         </div>
         <div id="proshowpage">
             <div id="showprod"></div>
@@ -91,9 +96,22 @@
                 <span id="totalp"></span>
             </span>
         </div>
-        </div>
+    
     </div>
 </body>
 
 </html>
+
 <script src="./scripts/checkout.js"></script>
+<script src="./scripts/navfun.js"></script>
+<script type="module">
+    import {navbar} from './scripts/navbar.js'
+    import {footer} from './scripts/footer.js'
+    
+     let navbarBox = document.getElementById('navbar_outer')
+     navbarBox.innerHTML = navbar()
+     
+     let footerBox = document.getElementById('footer_counter')
+     footerBox.innerHTML = footer()
+    </script>
+    

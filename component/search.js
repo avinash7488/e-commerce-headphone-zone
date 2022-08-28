@@ -14,9 +14,9 @@ let append=(data)=>{
     cont.innerHTML=null;
     data.forEach((el)=>{
         let div=document.createElement("div")
-        div.addEventListener("click", ()=>{
-            showelem(el)
-        })
+        // div.addEventListener("click", ()=>{
+        //     showelem(el)
+        // })
         div.setAttribute("class", "news")
         let img=document.createElement("img")
         img.src=el.mainimg
@@ -52,84 +52,84 @@ let append=(data)=>{
         cont.append(div)
     })
 }
-let filter6=async()=>{
+let filter6=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="HIFIMAN"
     })
     console.log(filter)
     append(filter)
 }
-let filter1=async()=>{
+let filter1=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="AKG"
     })
     console.log(filter)
     append(filter)
 }
-let filter2=async()=>{
+let filter2=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="ALTIAT"
     })
     console.log(filter)
     append(filter)
 }
-let filter3=async()=>{
+let filter3=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="AUDIO-TECHNICA"
     })
     console.log(filter)
     append(filter)
 }
-let filter4=async()=>{
+let filter4=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="BEYERDYNAMIC"
     })
     console.log(filter)
     append(filter)
 }
-let filter5=async()=>{
+let filter5=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="GRADO"
     })
     console.log(filter)
     append(filter)
 }
-let filter7=async()=>{
+let filter7=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="MEZE"
     })
     console.log(filter)
     append(filter)
 }
-let filter8=async()=>{
+let filter8=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="MONOPRICE"
     })
     console.log(filter)
     append(filter)
 }
-let filter9=async()=>{
+let filter9=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="SENNHEISER"
     })
     console.log(filter)
     append(filter)
 }
-let filter10=async()=>{
+let filter10=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="SHURE"
     })
     console.log(filter)
     append(filter)
 }
-let filter11=async()=>{
+let filter11=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="SONY"
     })
     console.log(filter)
     append(filter)
 }
-let filter12=async()=>{
+let filter12=async(data)=>{
     let filter=data.filter((el)=>{
      return el.name==="V-MODA"
     })
@@ -141,68 +141,68 @@ let showelem=(el)=>{
     localStorage.setItem("headphone",JSON.stringify(el))
     window.location.href="addcart.html"
     }
-    let filter13=async()=>{
+    let filter13=async(data)=>{
         let filter=data.filter((el)=>{
          return el.categories==="headphone"
         })
         console.log(filter)
         append(filter)
     }
-    let filter14=async()=>{
+    let filter14=async(data)=>{
         let filter=data.filter((el)=>{
          return el.categories==="earphone"
         })
         console.log(filter)
         append(filter)
     }
-    let filter15=async()=>{
+    let filter15=async(data)=>{
         let filter=data.filter((el)=>{
          return el.categories==="wireless earbuds"
         })
         console.log(filter)
         append(filter)
     }
-    let sort1=async()=>{
+    let sort1=async(data)=>{
         let sort=data.sort((a,b)=>{
             return a.price-b.price
         })
         append(sort)
     }
-    let sort2=async()=>{
+    let sort2=async(data)=>{
         let sort=data.sort((a,b)=>{
             return b.price-a.price
         })
         append(sort)
     }
-    let price1=async()=>{
+    let price1=async(data)=>{
         let filter=data.filter((el)=>{
          return +(el.price)<=10000
         })
         console.log(filter)
         append(filter)
     }
-    let price2=async()=>{
+    let price2=async(data)=>{
         let filter=data.filter((el)=>{
          return +(el.price)>10000&&+(el.price)<=15000
         })
         console.log(filter)
         append(filter)
     }
-    let price3=async()=>{
+    let price3=async(data)=>{
         let filter=data.filter((el)=>{
          return +(el.price)>15000&&+(el.price)<=20000
         })
         console.log(filter)
         append(filter)
     }
-    let price4=async()=>{
+    let price4=async(data)=>{
         let filter=data.filter((el)=>{
          return +(el.price)>20000&&+(el.price)<=25000
         })
         console.log(filter)
         append(filter)
     }
-    let price5=async()=>{
+    let price5=async(data)=>{
         let filter=data.filter((el)=>{
          return +(el.price)>25000&&+(el.price)<=30000
         })
@@ -217,7 +217,7 @@ let showelem=(el)=>{
 //        append(filter)
 //  }
     
-export {getData,filter1,filter2,filter3,filter4,filter5,filter6,filter7,filter8,filter9,filter10,filter11,filter12,filter13,filter14,filter15,sort1,sort2,price1,price2,price3,price4,price5}
+export {getData,showelem,filter1,filter2,filter3,filter4,filter5,filter6,filter7,filter8,filter9,filter10,filter11,filter12,filter13,filter14,filter15,sort1,sort2,price1,price2,price3,price4,price5}
 
 
 
