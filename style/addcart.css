@@ -17,10 +17,12 @@
   
 }
 #left>img{
-    width:550px;
-    height:500px;
+    width:250px;
+    height:250px;
     margin-right: 200px;
-    cursor:pointer
+    cursor:pointer;
+    object-fit: cover;
+    object-position:50% 50%;
 }
 #card{
     display: flex;
@@ -105,9 +107,10 @@
     font-size:medium;
     cursor:pointer;
 }
-/* #newdiv{
-    width:500px
-} */
+#newdiv{
+    width:500px;
+    margin: auto;
+}
 #table{
     /* position: absolute;
     top:650px;

@@ -1,7 +1,6 @@
 
 
 let data=JSON.parse(localStorage.getItem("headphone"))
-
 let append=(data)=>{
     let cont=document.getElementById("display")
     cont.innerHTML=null;
@@ -11,10 +10,18 @@ newdiv.setAttribute("id","newdiv")
         let div=document.createElement("div")
         div.setAttribute("id", "card")
 
+        let img=document.createElement("img")
+        img.src=data.mainimg
+  
+
+
         let left=document.createElement("div")
         left.setAttribute("id", "left")
         let leftimg=document.createElement("div")
+        
         let img1=document.createElement("img")
+        img1.style.height="60px"
+        img1.style.width="60px"
         let img2=document.createElement("img")
         let img3=document.createElement("img")
         let img4=document.createElement("img")
@@ -25,42 +32,42 @@ newdiv.setAttribute("id","newdiv")
         img1.src=data.bimg1
         img1.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg1)
-          window.location.href="image.html"
+          img.src=data.bimg1
           })
         img2.src=data.bimg2
         img2.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg2)
-          window.location.href="image.html"
+          img.src=data.bimg2
           })
         img3.src=data.bimg3
         img3.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg3)
-          window.location.href="image.html"
+          img.src=data.bimg3
           })
         img4.src=data.bimg4
         img4.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg4)
-          window.location.href="image.html"
+          img.src=data.bimg4
           })
         img5.src=data.bimg5
         img5.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg5)
-          window.location.href="image.html"
+          img.src=data.bimg5
           })
         img6.src=data.bimg6
         img6.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg6)
-          window.location.href="image.html"
+          img.src=data.bimg6
           })
         img7.src=data.bimg7
         img7.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg7)
-          window.location.href="image.html"
+          img.src=data.bimg7
           })
         img8.src=data.bimg8
         img8.addEventListener("click",()=>{
             localStorage.setItem("images",data.bimg8)
-          window.location.href="image.html"
+          img.src=data.bimg8
           })
         leftimg.append(img1,img2,img3,img4,img5,img6,img7,img8)
         
@@ -68,8 +75,6 @@ newdiv.setAttribute("id","newdiv")
         let brandname=document.createElement("h3")
         brandname.innerText=data.name
         brandname.setAttribute("id", "brandname")
-        let img=document.createElement("img")
-        img.src=data.mainimg
         left.append(img,leftimg)
         let name=document.createElement("h4")
         name.innerText=`${data.name}-${data.model}`
@@ -138,7 +143,7 @@ newdiv.setAttribute("id","newdiv")
       button.innerText="Add to Cart"
       button.setAttribute("id","buttoncart")
       button.addEventListener("click",()=>{
-        window.location.href="cart.html"
+        alert("Added to cart")
       })
       let button2=document.createElement("button")
       button2.innerText="CONFUSED? TALK TO A HEADPHONE GURU"

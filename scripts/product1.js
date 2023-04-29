@@ -10,7 +10,7 @@ import {getData,filter1,filter2,filter3,filter4,filter5,filter6,filter7,filter8,
 
 
 let main=async(zip)=>{
-    const url=`https://nameless-wildwood-80835.herokuapp.com/api/posts`
+    const url=`https://headphonezone.onrender.com/posts`
     let res = await fetch(url)
    let data=await res.json();
    console.log(data)
@@ -53,6 +53,7 @@ let append=(data)=>{
         let highcost=document.createElement("h3")
         highcost.innerText=`₹${Math.ceil(x)}`
         highcost.style.textDecoration="line-through"
+        highcost.style.color="red"
         costdiv.append(cost,highcost)
         div.addEventListener("click",()=>{
             showelem(el)
