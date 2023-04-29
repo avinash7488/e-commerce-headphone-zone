@@ -1,7 +1,7 @@
 
 
 let data=JSON.parse(localStorage.getItem("headphone"));
-let auth= localStorage.getItem("log")||"";
+let login= localStorage.getItem("log")||"";
 let append=(data)=>{
     let cont=document.getElementById("display")
     cont.innerHTML=null;
@@ -139,7 +139,7 @@ newdiv.setAttribute("id","newdiv")
       imgdiv.append(sideimg1,sideimg2,sideimg3)
       let button=document.createElement("button")
       button.addEventListener("click",()=>{
-      auth?adddata(data):window.location.href="./login.html"
+      login?adddata(data):window.location.href="./login.html"
       })
       button.innerText="Add to Cart"
       button.setAttribute("id","buttoncart")

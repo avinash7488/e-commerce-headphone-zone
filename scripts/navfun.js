@@ -94,3 +94,7 @@ let search = document.getElementById('nav_search')
 let redirect=()=>{
     auth?window.location.href="./cart.html":window.location.href="./login.html" 
 }
+
+
+
+

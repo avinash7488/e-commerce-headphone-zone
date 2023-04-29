@@ -23,9 +23,9 @@ let login = (event)=>{
     if(x.length>0 && y.length>0){
      alert('Login Successfull!');
      
-     localStorage.setItem('log',true)
+     localStorage.setItem('log',true);
      localStorage.setItem('user', JSON.stringify(x[0]))
-     window.location.href='account.html'
+     window.history.back()
     }else if(x.length<=0){
      alert("User doesn't exist, Sign Up");
      window.location.href='create.html';
