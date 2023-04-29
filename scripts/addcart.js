@@ -1,6 +1,7 @@
 
 
-let data=JSON.parse(localStorage.getItem("headphone"))
+let data=JSON.parse(localStorage.getItem("headphone"));
+let auth= localStorage.getItem("log")||"";
 let append=(data)=>{
     let cont=document.getElementById("display")
     cont.innerHTML=null;
@@ -138,13 +139,10 @@ newdiv.setAttribute("id","newdiv")
       imgdiv.append(sideimg1,sideimg2,sideimg3)
       let button=document.createElement("button")
       button.addEventListener("click",()=>{
-      adddata(data)
+      auth?adddata(data):window.location.href="./login.html"
       })
       button.innerText="Add to Cart"
       button.setAttribute("id","buttoncart")
-      button.addEventListener("click",()=>{
-        alert("Added to cart")
-      })
       let button2=document.createElement("button")
       button2.innerText="CONFUSED? TALK TO A HEADPHONE GURU"
       button2.setAttribute("id","buttoncart2")
@@ -158,6 +156,7 @@ newdiv.setAttribute("id","newdiv")
 }
 append(data)
 let adddata=(data)=>{
+  alert("Added to cart")
   let arr=JSON.parse(localStorage.getItem("datastore"))||[];
   arr.push(data)
     localStorage.setItem("datastore",JSON.stringify(arr))

@@ -1,3 +1,4 @@
+let auth= localStorage.getItem("log")||"";
 let get_data1 = () =>{
 
     localStorage.setItem("pro_page_key",("earphone"));
@@ -89,4 +90,7 @@ let search = document.getElementById('nav_search')
     
 }
 
-// document.getElementById('nav_search').innerHTML = searchRes();
+// cart
+let redirect=()=>{
+    auth?window.location.href="./cart.html":window.location.href="./login.html" 
+}

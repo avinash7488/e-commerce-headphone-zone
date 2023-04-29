@@ -185,9 +185,11 @@ export function navbar(){
    
         <input onkeydown="searchRes(this)" type="text" id="nav_search" placeholder="Search">
         <a href="./login.html"><p id="navlogin">Login</p></a>
-        <a href="./cart.html"><p>Cart</p></a>
+        <a onclick="redirect()"><p>Cart</p></a>
        
 </div>`
+
+
 }
 
 
