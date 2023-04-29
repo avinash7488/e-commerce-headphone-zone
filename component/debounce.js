@@ -6,7 +6,7 @@ let main=async()=>{
 }
 let data;
 let getData=async (query)=>{
-    const url=`https://nameless-wildwood-80835.herokuapp.com/api/posts`
+    const url=`https://headphonezone.onrender.com/posts`
     let res=await fetch(url);
     data=await res.json();
     console.log(data)

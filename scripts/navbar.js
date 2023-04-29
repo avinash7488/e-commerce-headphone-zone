@@ -185,7 +185,7 @@ export function navbar(){
    
         <input onkeydown="searchRes(this)" type="text" id="nav_search" placeholder="Search">
         <a href="./login.html"><p id="navlogin">Login</p></a>
-        <p>cart</p>
+        <a href="./cart.html"><p>Cart</p></a>
        
 </div>`
 }

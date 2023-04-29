@@ -62,7 +62,7 @@ setInterval(start_ss,5000);
 
 let get_this = async (categ) =>{
 
-    let res = await fetch('https://nameless-wildwood-80835.herokuapp.com/api/posts');
+    let res = await fetch('https://headphonezone.onrender.com/posts');
     let data = await res.json();
     
    public_pro(data,categ);

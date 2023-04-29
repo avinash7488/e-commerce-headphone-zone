@@ -259,10 +259,11 @@ iframe{
 }
 .event{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 40px ;
-    width: 60%;
-    margin: auto;
+    /* width: 90%; */
+    /* margin: auto; */
+    padding: 20PX;
     margin-bottom: 80px;
 }
 .event>div{
