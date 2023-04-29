@@ -206,51 +206,51 @@ insta.addEventListener("click",()=>{
 
 // productpg call from categories
 
-let getthis_data1 = () =>{
+// let getthis_data1 = () =>{
 
-    localStorage.setItem("pro_page_key",("earphone"));
-    window.location.href="./product1.html";
-
-
-};
-
-let getthis_data2 = () => {
-
-    localStorage.setItem("pro_page_key",("headphone"));
-    window.location.href="./product1.html";
-
-};
-
-let getthis_data3 = () => {
-
-    localStorage.setItem("pro_page_key",("wireless earbuds"));
-    window.location.href="./product1.html";
+//     localStorage.setItem("pro_page_key",("earphone"));
+//     window.location.href="./product1.html";
 
 
-};
+// };
 
-let getthis_data4 = () => {
+// let getthis_data2 = () => {
 
-    localStorage.setItem("pro_page_key",("wireless headphones"));
-    window.location.href="./product1.html";
+//     localStorage.setItem("pro_page_key",("headphone"));
+//     window.location.href="./product1.html";
 
+// };
 
-};
+// let getthis_data3 = () => {
 
-let getthis_data5 = () => {
-
-    localStorage.setItem("pro_page_key",("earphone"));
-    window.location.href="./product1.html";
-
-}
-
-let getthis_data6 = () => {
-
-    localStorage.setItem("pro_page_key",("work from home"));
-    window.location.href="./product1.html";
+//     localStorage.setItem("pro_page_key",("wireless earbuds"));
+//     window.location.href="./product1.html";
 
 
-}
+// };
+
+// let getthis_data4 = () => {
+
+//     localStorage.setItem("pro_page_key",("wireless headphones"));
+//     window.location.href="./product1.html";
+
+
+// };
+
+// let getthis_data5 = () => {
+
+//     localStorage.setItem("pro_page_key",("earphone"));
+//     window.location.href="./product1.html";
+
+// }
+
+// let getthis_data6 = () => {
+
+//     localStorage.setItem("pro_page_key",("work from home"));
+//     window.location.href="./product1.html";
+
+
+// }
 
 
 

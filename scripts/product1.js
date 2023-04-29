@@ -6,7 +6,9 @@ let zip=(localStorage.getItem("pro_page_key"));
 
 console.log('zip:', zip)
 
-import {getData,filter1,filter2,filter3,filter4,filter5,filter6,filter7,filter8,filter9,filter10,filter11,filter12,filter13,filter14,filter15,sort1,sort2,price1,price2,price3,price4,price5,showelem} from "../component/search.js"
+import {getData,filter1,filter2,filter3,filter4,filter5,filter6,filter7,filter8,filter9,filter10,
+    filter11,filter12,filter13,filter14,filter15,sort1,sort2,
+    price1,price2,price3,price4,price5,showelem} from "../component/search.js"
 
 
 let main=async(zip)=>{
